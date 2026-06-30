@@ -1098,36 +1098,43 @@ footer{background:var(--navy);padding:52px 6% 28px}
 
       <div class="cf">
         <h3>Send Us a Message</h3>
-        <div class="fr2">
-          <div class="fg"><label>Your Name *</label><input type="text" placeholder="Full name"></div>
-          <div class="fg"><label>Company *</label><input type="text" placeholder="Company name"></div>
+        <div id="cf-form-state">
+          <div class="fr2">
+            <div class="fg"><label>Your Name *</label><input id="cf-name" type="text" placeholder="Full name"></div>
+            <div class="fg"><label>Company *</label><input id="cf-company" type="text" placeholder="Company name"></div>
+          </div>
+          <div class="fr2">
+            <div class="fg"><label>Email Address *</label><input id="cf-email" type="email" placeholder="Work email"></div>
+            <div class="fg"><label>Phone Number</label><input id="cf-phone" type="tel" placeholder="+91 / +61 / +65 / +971"></div>
+          </div>
+          <div class="fg"><label>Country *</label>
+            <select id="cf-country">
+              <option value="">Select country</option>
+              <option>India</option><option>Australia</option>
+              <option>Singapore</option><option>UAE / Middle East</option><option>Other</option>
+            </select>
+          </div>
+          <div class="fg"><label>What are you looking for? *</label>
+            <select id="cf-enquiry">
+              <option value="">Select enquiry type</option>
+              <option>IT Recruitment — Senior / Leadership Role</option>
+              <option>Non-IT Leadership Hiring</option>
+              <option>Executive Search (CXO Level)</option>
+              <option>Retainer / Exclusive Partnership</option>
+              <option>Empanelment as Recruitment Vendor</option>
+              <option>Not sure yet — let's talk</option>
+            </select>
+          </div>
+          <div class="fg"><label>Tell us about the role(s) you need filled</label>
+            <textarea id="cf-message" placeholder="Role title, seniority level, location, and any context about the search — the more you share, the faster we can come back with a plan..."></textarea>
+          </div>
+          <button class="fsub" onclick="submitContactForm()">Send Message &nbsp;→</button>
         </div>
-        <div class="fr2">
-          <div class="fg"><label>Email Address *</label><input type="email" placeholder="Work email"></div>
-          <div class="fg"><label>Phone Number</label><input type="tel" placeholder="+91 / +61 / +65 / +971"></div>
+        <div id="cf-success" style="display:none;text-align:center;padding:40px 20px">
+          <div style="font-size:48px;margin-bottom:16px">✅</div>
+          <h3 style="font-family:var(--d);font-size:20px;font-weight:700;color:var(--navy);margin-bottom:10px">Message Received</h3>
+          <p style="font-size:15px;color:var(--lg);line-height:1.7">Thank you — we'll come back with a search plan within 24 hours on business days.</p>
         </div>
-        <div class="fg"><label>Country *</label>
-          <select>
-            <option value="">Select country</option>
-            <option>India</option><option>Australia</option>
-            <option>Singapore</option><option>UAE / Middle East</option><option>Other</option>
-          </select>
-        </div>
-        <div class="fg"><label>What are you looking for? *</label>
-          <select>
-            <option value="">Select enquiry type</option>
-            <option>IT Recruitment — Senior / Leadership Role</option>
-            <option>Non-IT Leadership Hiring</option>
-            <option>Executive Search (CXO Level)</option>
-            <option>Retainer / Exclusive Partnership</option>
-            <option>Empanelment as Recruitment Vendor</option>
-            <option>Not sure yet — let's talk</option>
-          </select>
-        </div>
-        <div class="fg"><label>Tell us about the role(s) you need filled</label>
-          <textarea placeholder="Role title, seniority level, location, and any context about the search — the more you share, the faster we can come back with a plan..."></textarea>
-        </div>
-        <button class="fsub">Send Message &nbsp;→</button>
       </div>
     </div>
   </div>
@@ -1236,6 +1243,18 @@ document.querySelectorAll('.mobile-nav a').forEach(a => {
   a.addEventListener('click', e => e.preventDefault());
 });
 
+// ── Google Apps Script endpoint (paste your Web App URL here after deploying) ──
+var SCRIPT_URL = 'PASTE_YOUR_APPS_SCRIPT_WEB_APP_URL_HERE';
+
+// ── Shared submit helper ──
+function submitToSheets(data, onSuccess) {
+  var params = new URLSearchParams();
+  Object.keys(data).forEach(function(k) { params.append(k, data[k]); });
+  fetch(SCRIPT_URL, { method: 'POST', mode: 'no-cors', body: params })
+    .catch(function() {}); // silent fail — success shown optimistically
+  onSuccess();
+}
+
 // ── Popup ──
 function openPopup() {
   document.getElementById('popup-overlay').classList.add('open');
@@ -1249,11 +1268,41 @@ function closePopup() {
 }
 
 function submitPopup() {
-  var name = document.getElementById('p-name').value.trim();
-  var email = document.getElementById('p-email').value.trim();
+  var name    = document.getElementById('p-name').value.trim();
+  var email   = document.getElementById('p-email').value.trim();
   if (!name || !email) { alert('Please fill in your name and email.'); return; }
-  document.getElementById('popup-form-state').style.display = 'none';
-  document.getElementById('popup-success').style.display = 'block';
+  submitToSheets({
+    name:    name,
+    company: document.getElementById('p-company').value.trim(),
+    email:   email,
+    phone:   document.getElementById('p-phone').value.trim(),
+    enquiry: document.getElementById('p-enquiry').value,
+    message: document.getElementById('p-message').value.trim(),
+    source:  'popup'
+  }, function() {
+    document.getElementById('popup-form-state').style.display = 'none';
+    document.getElementById('popup-success').style.display = 'block';
+  });
+}
+
+// ── Contact page form ──
+function submitContactForm() {
+  var name  = document.getElementById('cf-name').value.trim();
+  var email = document.getElementById('cf-email').value.trim();
+  if (!name || !email) { alert('Please fill in your name and email address.'); return; }
+  submitToSheets({
+    name:    name,
+    company: document.getElementById('cf-company').value.trim(),
+    email:   email,
+    phone:   document.getElementById('cf-phone').value.trim(),
+    country: document.getElementById('cf-country').value,
+    enquiry: document.getElementById('cf-enquiry').value,
+    message: document.getElementById('cf-message').value.trim(),
+    source:  'contact-page'
+  }, function() {
+    document.getElementById('cf-form-state').style.display = 'none';
+    document.getElementById('cf-success').style.display = 'block';
+  });
 }
 
 document.getElementById('popup-overlay').addEventListener('click', function(e) {
