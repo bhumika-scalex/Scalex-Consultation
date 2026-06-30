@@ -3,9 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Scalex Consulting | IT Recruitment | India · Australia · Singapore · Middle East</title>
-<meta name="description" content="Senior IT and leadership recruitment for mid-size companies. Written SLA. Shortlist in 7–10 days. 96% adherence. India, Australia, Singapore, Middle East. Founded by Bhumika Srivastava.">
+<meta name="description" content="Senior IT and leadership recruitment for mid-size companies. Shortlist in 7–10 days. Written SLA. 96% adherence. India, Australia, Singapore, Middle East.">
 <meta name="keywords" content="IT recruitment India, senior IT hiring, leadership recruitment Bengaluru, IT staffing agency, technology recruitment, executive search India, recruitment agency Australia Singapore Middle East">
 <meta name="author" content="Bhumika Srivastava, Scalex Consulting">
 <meta name="robots" content="index, follow">
@@ -24,7 +23,6 @@
 <meta name="twitter:title" content="Scalex Consulting | Senior IT Recruitment">
 <meta name="twitter:description" content="Senior IT and leadership recruitment. Shortlist in 7–10 days. Written SLA. India · Australia · Singapore · Middle East.">
 
-<!-- Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <!-- JSON-LD Structured Data -->
@@ -55,9 +53,7 @@
       "@type": "ProfessionalService",
       "@id": "https://scalexconsulting.in/#service",
       "name": "Scalex Consulting",
-      "image": "https://scalexconsulting.in/logo.png",
       "url": "https://scalexconsulting.in",
-      "telephone": "",
       "email": "bhumika@scalexconsulting.in",
       "address": {
         "@type": "PostalAddress",
@@ -65,7 +61,6 @@
         "addressRegion": "Karnataka",
         "addressCountry": "IN"
       },
-      "priceRange": "$$",
       "openingHours": "Mo-Fr 09:00-18:00",
       "serviceType": "IT Recruitment and Leadership Hiring"
     },
@@ -112,16 +107,15 @@
 html{scroll-behavior:smooth}
 body{font-family:var(--b);color:var(--dg);background:var(--white);-webkit-font-smoothing:antialiased}
 
-/* ── NAV / HEADER ── */
-header{position:fixed;top:0;left:0;right:0;z-index:200}
-nav{background:rgba(30,39,97,0.97);backdrop-filter:blur(12px);height:66px;display:flex;align-items:center;justify-content:space-between;padding:0 6%;border-bottom:1px solid rgba(255,255,255,.07)}
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(30,39,97,0.97);backdrop-filter:blur(12px);height:66px;display:flex;align-items:center;justify-content:space-between;padding:0 6%;border-bottom:1px solid rgba(255,255,255,.07)}
 .logo{font-family:var(--d);font-size:19px;font-weight:700;color:var(--white);text-decoration:none;cursor:pointer}
 .logo span{color:var(--gold)}
 .nav-tabs{display:flex;gap:4px;list-style:none}
 .nav-tabs li a{color:rgba(255,255,255,.72);font-size:14px;font-weight:500;text-decoration:none;padding:8px 18px;border-radius:6px;transition:all .2s;display:block}
 .nav-tabs li a:hover{color:var(--white);background:rgba(255,255,255,.07)}
 .nav-tabs li a.active{color:var(--white);background:var(--teal)}
-.nav-cta{background:var(--gold);color:var(--navy);padding:9px 22px;border-radius:6px;font-size:14px;font-weight:700;text-decoration:none;transition:all .2s;white-space:nowrap;cursor:pointer;border:none;font-family:var(--b)}
+.nav-cta{background:var(--gold);color:var(--navy);padding:9px 22px;border-radius:6px;font-size:14px;font-weight:700;text-decoration:none;transition:all .2s;white-space:nowrap}
 .nav-cta:hover{background:#d97706}
 
 /* Hamburger */
@@ -147,14 +141,14 @@ nav{background:rgba(30,39,97,0.97);backdrop-filter:blur(12px);height:66px;displa
 .popup-close{position:absolute;top:16px;right:18px;background:none;border:none;font-size:22px;color:var(--lg);cursor:pointer;line-height:1;padding:4px 8px;border-radius:4px;transition:color .2s}
 .popup-close:hover{color:var(--navy)}
 .popup-box h2{font-family:var(--d);font-size:22px;font-weight:700;color:var(--navy);margin-bottom:6px}
-.popup-box .popup-sub{font-size:14px;color:var(--lg);margin-bottom:24px;line-height:1.6}
+.popup-sub{font-size:14px;color:var(--lg);margin-bottom:24px;line-height:1.6}
 .popup-or{text-align:center;margin:20px 0 0;font-size:13px;color:var(--lg)}
 .popup-or a{color:var(--teal);font-weight:600;text-decoration:none}
 .popup-or a:hover{text-decoration:underline}
 .popup-success{display:none;text-align:center;padding:20px 0}
 .popup-success h3{font-family:var(--d);font-size:20px;font-weight:700;color:var(--navy);margin-bottom:10px}
 .popup-success p{font-size:15px;color:var(--lg);line-height:1.7}
-.popup-success .tick{font-size:48px;margin-bottom:16px}
+.popup-tick{font-size:48px;margin-bottom:16px}
 
 /* ── PAGES ── */
 .page{display:none;min-height:100vh;padding-top:66px}
@@ -163,6 +157,7 @@ nav{background:rgba(30,39,97,0.97);backdrop-filter:blur(12px);height:66px;displa
 /* ── SHARED ── */
 .sec{padding:80px 6%}
 .sec-alt{background:var(--cream)}
+.sec-dark{background:var(--navy)}
 .ey{display:inline-block;font-size:11px;font-weight:700;color:var(--teal);letter-spacing:2px;text-transform:uppercase;margin-bottom:12px}
 .ey-lt{color:var(--lteal)}
 .st{font-family:var(--d);font-size:clamp(26px,3vw,38px);font-weight:700;color:var(--navy);line-height:1.2;margin-bottom:14px}
@@ -180,7 +175,7 @@ nav{background:rgba(30,39,97,0.97);backdrop-filter:blur(12px);height:66px;displa
 .btn-ow:hover{border-color:var(--white)}
 .row{display:flex;gap:14px;flex-wrap:wrap}
 
-/* Form shared */
+/* Shared form elements (popup + contact page) */
 .fr2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .fg{margin-bottom:16px}
 .fg label{display:block;font-size:13px;font-weight:600;color:var(--dg);margin-bottom:6px}
@@ -193,16 +188,21 @@ nav{background:rgba(30,39,97,0.97);backdrop-filter:blur(12px);height:66px;displa
 /* ════════════════════════════
    PAGE 1 — HOME
 ════════════════════════════ */
+
+/* Hero */
 .hero{min-height:calc(100vh - 66px);background:linear-gradient(140deg,#0d1545 0%,#1E2761 50%,#012d38 100%);display:flex;align-items:center;padding:80px 6% 60px;position:relative;overflow:hidden}
 .hero::after{content:'';position:absolute;top:-20%;right:-5%;width:60%;height:140%;background:radial-gradient(ellipse at center,rgba(2,128,144,.15) 0%,transparent 65%);pointer-events:none}
 .hero-inner{max-width:680px;position:relative;z-index:2}
 .eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(2,195,154,.1);border:1px solid rgba(2,195,154,.3);border-radius:4px;padding:6px 14px;font-size:11px;font-weight:700;color:var(--lteal);letter-spacing:1.8px;text-transform:uppercase;margin-bottom:28px}
 .dot{width:6px;height:6px;background:var(--lteal);border-radius:50%;animation:blink 2s infinite}
 @keyframes blink{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.5)}}
+.hero h1{font-family:var(--d);font-size:clamp(38px,5vw,62px);font-weight:700;color:var(--white);line-height:1.1;letter-spacing:-1px;margin-bottom:10px}
+.hero h1 em{font-style:normal;color:var(--gold)}
 .hero-line{width:60px;height:3px;background:var(--teal);border-radius:2px;margin:22px 0}
 .hero-sub{font-size:18px;color:rgba(255,255,255,.65);line-height:1.8;max-width:520px;margin-bottom:38px}
 .hero-geo{position:absolute;bottom:36px;right:6%;font-size:11px;color:rgba(255,255,255,.3);letter-spacing:2.5px;text-transform:uppercase}
 
+/* 3-col promise strip */
 .promise{background:var(--teal);padding:0}
 .promise-inner{display:grid;grid-template-columns:repeat(3,1fr)}
 .promise-item{padding:32px 30px;border-right:1px solid rgba(255,255,255,.15);text-align:center}
@@ -211,6 +211,7 @@ nav{background:rgba(30,39,97,0.97);backdrop-filter:blur(12px);height:66px;displa
 .promise-item p{font-size:13px;color:rgba(255,255,255,.75);line-height:1.6}
 .promise-icon{font-size:24px;margin-bottom:10px}
 
+/* Problem */
 .prob-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2px;border-radius:14px;overflow:hidden;margin-top:48px}
 .pc{padding:38px 30px}
 .pc-1{background:rgba(30,39,97,.05)}
@@ -220,21 +221,21 @@ nav{background:rgba(30,39,97,0.97);backdrop-filter:blur(12px);height:66px;displa
 .pc-3 .pc-lbl{color:rgba(255,255,255,.5)}
 .pi{margin-bottom:24px}
 .pi h4{font-family:var(--d);font-size:15px;font-weight:600;color:var(--navy);margin-bottom:7px}
-.pi h3{font-family:var(--d);font-size:15px;font-weight:600;color:var(--navy);margin-bottom:7px}
 .pi p{font-size:13.5px;color:var(--lg);line-height:1.65}
 .pc-3 .pi h4{color:var(--white)}
-.pc-3 .pi h3{color:var(--white)}
 .pc-3 .pi p{color:rgba(255,255,255,.82)}
 
+/* Why strip */
 .why-strip{background:var(--navy);padding:80px 6%}
 .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:52px}
 .why-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);border-radius:14px;padding:28px 24px;transition:border-color .2s,background .2s}
 .why-card:hover{border-color:var(--gold);background:rgba(255,255,255,.08)}
 .why-icon{font-size:26px;margin-bottom:14px}
 .why-tag{display:inline-block;background:rgba(2,195,154,.12);color:var(--lteal);font-size:10px;font-weight:700;padding:3px 9px;border-radius:3px;letter-spacing:1px;text-transform:uppercase;margin-bottom:12px}
-.why-card h3{font-family:var(--d);font-size:15px;font-weight:600;color:var(--white);margin-bottom:10px}
+.why-card h4{font-family:var(--d);font-size:15px;font-weight:600;color:var(--white);margin-bottom:10px}
 .why-card p{font-size:13px;color:rgba(255,255,255,.55);line-height:1.65}
 
+/* Markets home */
 .mkt-row{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .mkt-card{background:var(--white);border:1.5px solid var(--bdr);border-radius:12px;padding:24px 20px;transition:border-color .2s,box-shadow .2s}
 .mkt-card:hover{border-color:var(--teal);box-shadow:0 4px 16px rgba(2,128,144,.1)}
@@ -246,12 +247,13 @@ nav{background:rgba(30,39,97,0.97);backdrop-filter:blur(12px);height:66px;displa
 .mkt-pts li:last-child{border-bottom:none}
 .mkt-pts li::before{content:'·';color:var(--teal);flex-shrink:0;font-weight:700}
 
+/* Home CTA */
 .home-cta{background:linear-gradient(135deg,var(--teal) 0%,#016d7a 40%,var(--navy) 100%);padding:96px 6%;text-align:center}
 .home-cta h2{font-family:var(--d);font-size:clamp(28px,3.5vw,42px);font-weight:700;color:var(--white);margin-bottom:14px;line-height:1.2}
 .home-cta p{font-size:17px;color:rgba(255,255,255,.72);max-width:480px;margin:0 auto 36px;line-height:1.75}
 
 /* ════════════════════════════
-   PAGE 2 — ABOUT
+   PAGE 2 — ABOUT US
 ════════════════════════════ */
 .about-hero{background:var(--navy);padding:80px 6%;display:grid;grid-template-columns:1.1fr 1fr;gap:60px;align-items:center}
 .about-hero-left h1{font-family:var(--d);font-size:clamp(30px,3.5vw,44px);font-weight:700;color:var(--white);line-height:1.2;margin-bottom:16px}
@@ -262,6 +264,7 @@ nav{background:rgba(30,39,97,0.97);backdrop-filter:blur(12px);height:66px;displa
 .astat-num{font-family:var(--d);font-size:46px;font-weight:700;color:var(--gold);line-height:1;margin-bottom:6px}
 .astat-lbl{font-size:12px;color:rgba(255,255,255,.5);line-height:1.5}
 
+/* Founder bio */
 .founder-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:48px;align-items:start}
 .founder-photo{background:var(--cream);border-radius:14px;padding:36px;text-align:center}
 .founder-initials{width:90px;height:90px;border-radius:50%;background:var(--navy);color:var(--gold);font-family:var(--d);font-size:32px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 18px}
@@ -270,17 +273,18 @@ nav{background:rgba(30,39,97,0.97);backdrop-filter:blur(12px);height:66px;displa
 .founder-creds{display:flex;flex-direction:column;gap:10px;text-align:left}
 .cred{display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--dg);line-height:1.5}
 .cred::before{content:'✦';color:var(--teal);font-size:11px;flex-shrink:0;margin-top:2px}
-.founder-bio h2{font-family:var(--d);font-size:22px;font-weight:600;color:var(--navy);margin-bottom:18px}
+.founder-bio h3{font-family:var(--d);font-size:22px;font-weight:600;color:var(--navy);margin-bottom:18px}
 .founder-bio p{font-size:14.5px;color:var(--dg);line-height:1.85;margin-bottom:16px}
 .quote-block{background:var(--teal);border-radius:12px;padding:24px 28px;margin-top:24px}
-.quote-block blockquote{font-size:15px;color:var(--white);line-height:1.75;font-style:italic;margin-bottom:12px}
-.quote-block cite{font-size:13px;color:rgba(255,255,255,.7);font-weight:600;font-style:normal}
+.quote-block p{font-size:15px;color:var(--white);line-height:1.75;font-style:italic;margin-bottom:12px}
+.quote-block span{font-size:13px;color:rgba(255,255,255,.7);font-weight:600}
 
+/* Mission values */
 .mission-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .mv-card{border:1.5px solid var(--bdr);border-radius:14px;padding:28px 24px;transition:border-color .2s,box-shadow .2s}
 .mv-card:hover{border-color:var(--teal);box-shadow:0 4px 18px rgba(2,128,144,.09)}
 .mv-icon{font-size:28px;margin-bottom:14px}
-.mv-card h3{font-family:var(--d);font-size:16px;font-weight:600;color:var(--navy);margin-bottom:10px}
+.mv-card h4{font-family:var(--d);font-size:16px;font-weight:600;color:var(--navy);margin-bottom:10px}
 .mv-card p{font-size:13.5px;color:var(--lg);line-height:1.65}
 
 /* ════════════════════════════
@@ -290,6 +294,7 @@ nav{background:rgba(30,39,97,0.97);backdrop-filter:blur(12px);height:66px;displa
 .svc-hero h1{font-family:var(--d);font-size:clamp(30px,3.5vw,44px);font-weight:700;color:var(--white);margin-bottom:14px;line-height:1.2}
 .svc-hero p{font-size:17px;color:rgba(255,255,255,.65);max-width:560px;margin:0 auto}
 
+/* Role cards */
 .role-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
 .role-card{background:var(--white);border-radius:14px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.06);transition:box-shadow .2s}
 .role-card:hover{box-shadow:0 8px 28px rgba(30,39,97,.1)}
@@ -303,20 +308,23 @@ nav{background:rgba(30,39,97,0.97);backdrop-filter:blur(12px);height:66px;displa
 .rl li{font-size:13.5px;color:var(--dg);display:flex;align-items:flex-start;gap:7px;line-height:1.4}
 .rl li::before{content:'→';color:var(--teal);font-weight:700;flex-shrink:0;margin-top:1px}
 
+/* Process */
 .proc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .ps{background:var(--white);border-radius:14px;padding:28px 24px;position:relative;box-shadow:0 1px 3px rgba(0,0,0,.05);transition:box-shadow .2s}
 .ps:hover{box-shadow:0 6px 20px rgba(30,39,97,.08)}
 .pn{width:36px;height:36px;border-radius:50%;background:var(--navy);color:var(--white);font-family:var(--d);font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
 .pt{position:absolute;top:22px;right:22px;background:var(--gold);color:var(--navy);font-size:10px;font-weight:700;padding:3px 9px;border-radius:4px;letter-spacing:.5px}
-.ps h3{font-family:var(--d);font-size:15px;font-weight:600;color:var(--navy);margin-bottom:9px}
+.ps h4{font-family:var(--d);font-size:15px;font-weight:600;color:var(--navy);margin-bottom:9px}
 .ps p{font-size:13.5px;color:var(--lg);line-height:1.65}
 
+/* Sectors */
 .sec2-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
 .scard{background:var(--white);border-radius:14px;padding:30px}
 .scard h3{font-family:var(--d);font-size:16px;font-weight:600;color:var(--navy);margin-bottom:16px;padding-bottom:12px;border-bottom:2px solid var(--teal)}
 .tags{display:flex;flex-wrap:wrap;gap:8px}
 .tag{background:var(--cream);color:var(--dg);font-size:13px;padding:6px 14px;border-radius:20px;border:1px solid var(--bdr)}
 
+/* Why compare */
 .ctab{width:100%;border-collapse:collapse;border-radius:12px;overflow:hidden;font-size:14px;box-shadow:0 1px 4px rgba(0,0,0,.07)}
 .ctab th{padding:13px 18px;font-family:var(--d);font-size:12px;font-weight:600;letter-spacing:.3px}
 .ctab th:first-child{text-align:left;background:var(--cream);color:var(--navy)}
@@ -338,20 +346,21 @@ nav{background:rgba(30,39,97,0.97);backdrop-filter:blur(12px);height:66px;displa
 .contact-hero p{font-size:17px;color:rgba(255,255,255,.65);max-width:520px;margin:0 auto}
 
 .contact-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:48px;align-items:start}
-.ci h2{font-family:var(--d);font-size:20px;font-weight:600;color:var(--navy);margin-bottom:22px}
+.ci h3{font-family:var(--d);font-size:20px;font-weight:600;color:var(--navy);margin-bottom:22px}
 .citem{display:flex;gap:14px;align-items:flex-start;margin-bottom:18px}
 .cico{width:42px;height:42px;border-radius:9px;background:var(--cream);border:1px solid var(--bdr);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
 .cit strong{font-size:11px;color:var(--lg);display:block;margin-bottom:3px;text-transform:uppercase;letter-spacing:.5px}
 .cit a,.cit span{font-size:15px;color:var(--navy);font-weight:500;text-decoration:none}
 .cit a:hover{color:var(--teal)}
 .cf{background:var(--white);border-radius:14px;padding:36px;box-shadow:0 2px 14px rgba(0,0,0,.06)}
-.cf h2{font-family:var(--d);font-size:20px;font-weight:600;color:var(--navy);margin-bottom:24px}
+.cf h3{font-family:var(--d);font-size:20px;font-weight:600;color:var(--navy);margin-bottom:24px}
 
+/* Offices */
 .offices-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:20px}
 .off-card{background:var(--white);border:1.5px solid var(--bdr);border-radius:12px;padding:22px 18px;text-align:center;transition:border-color .2s}
 .off-card:hover{border-color:var(--teal)}
 .off-flag{font-size:28px;margin-bottom:8px}
-.off-card h3{font-family:var(--d);font-size:15px;font-weight:700;color:var(--navy);margin-bottom:6px}
+.off-card h4{font-family:var(--d);font-size:15px;font-weight:700;color:var(--navy);margin-bottom:6px}
 .off-card p{font-size:12.5px;color:var(--lg);line-height:1.6}
 
 /* ── FOOTER ── */
@@ -371,22 +380,27 @@ footer{background:var(--navy);padding:52px 6% 28px}
 .fbot p,.fbot a{font-size:12px;color:rgba(255,255,255,.28);text-decoration:none}
 .fbot a:hover{color:var(--gold)}
 
+/* Floating CTA */
+.float-cta{position:fixed;bottom:28px;right:28px;z-index:300;background:var(--teal);color:var(--white);border:none;border-radius:50px;padding:13px 22px;font-size:14px;font-weight:700;font-family:var(--b);cursor:pointer;box-shadow:0 4px 20px rgba(2,128,144,.45);transition:all .25s;display:flex;align-items:center;gap:8px;white-space:nowrap}
+.float-cta:hover{background:#026d7a;transform:translateY(-2px);box-shadow:0 6px 24px rgba(2,128,144,.55)}
+.float-cta .fc-icon{font-size:16px}
+@media(max-width:480px){.float-cta{padding:12px 16px;font-size:13px;bottom:20px;right:16px}}
+
 /* ── RESPONSIVE ── */
 @media(max-width:1024px){
   .mkt-row,.offices-grid{grid-template-columns:1fr 1fr}
   .fg3{grid-template-columns:1fr 1fr}
   .about-hero{grid-template-columns:1fr;gap:40px}
-  .why-grid{grid-template-columns:1fr 1fr}
 }
-
 @media(max-width:768px){
+  .research-grid{grid-template-columns:1fr!important}
+  nav{padding:0 5%}
   .nav-tabs,.nav-cta{display:none}
   .hamburger{display:flex}
-  nav{padding:0 5%}
   .sec{padding:56px 5%}
   .why-strip{padding:56px 5%}
   .home-cta{padding:64px 5%}
-  .contact-hero,.svc-hero,.about-hero{padding:60px 5%}
+  .about-hero,.svc-hero,.contact-hero{padding:60px 5%}
   .prob-grid,.why-grid,.proc-grid,.mission-grid{grid-template-columns:1fr}
   .role-grid,.sec2-grid,.contact-grid,.founder-grid{grid-template-columns:1fr}
   .promise-inner{grid-template-columns:1fr}
@@ -396,12 +410,10 @@ footer{background:var(--navy);padding:52px 6% 28px}
   .fg3{grid-template-columns:1fr 1fr}
   .hero-geo{display:none}
   .rl{grid-template-columns:1fr}
-  .research-grid{grid-template-columns:1fr!important}
   .cf{padding:24px 20px}
   .ctab th,.ctab td{padding:10px 12px;font-size:12px}
   .popup-box{padding:28px 22px}
 }
-
 @media(max-width:480px){
   .sec{padding:48px 4%}
   .why-strip{padding:48px 4%}
@@ -411,58 +423,52 @@ footer{background:var(--navy);padding:52px 6% 28px}
   .mkt-row,.offices-grid{grid-template-columns:1fr}
   .fg3{grid-template-columns:1fr}
   .row{flex-direction:column}
-  .btn-p,.btn-s,.btn-w,.btn-ow{text-align:center;justify-content:center}
-  .astat-num{font-size:36px}
-  .hero-sub{font-size:16px}
 }
 </style>
 </head>
 <body>
 
-<!-- ══ HEADER / NAV ══ -->
-<header>
-  <nav role="navigation" aria-label="Main navigation">
-    <a class="logo" onclick="showPage('home')" aria-label="Scalex Consulting - Home">Scale<span>X</span> Consulting</a>
-    <ul class="nav-tabs" role="menubar">
-      <li role="none"><a href="#home" onclick="showPage('home')" id="tab-home" class="active" role="menuitem">Home</a></li>
-      <li role="none"><a href="#about" onclick="showPage('about')" id="tab-about" role="menuitem">About Us</a></li>
-      <li role="none"><a href="#services" onclick="showPage('services')" id="tab-services" role="menuitem">Services</a></li>
-      <li role="none"><a href="#contact" onclick="showPage('contact')" id="tab-contact" role="menuitem">Contact</a></li>
-    </ul>
-    <button class="nav-cta" onclick="openPopup()" aria-label="Talk to us - open contact form">Talk to Us</button>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
+<!-- ══ NAV ══ -->
+<nav>
+  <a class="logo" onclick="showPage('home')">Scale<span>X</span> Consulting</a>
+  <ul class="nav-tabs">
+    <li><a href="#" onclick="showPage('home')" id="tab-home" class="active">Home</a></li>
+    <li><a href="#" onclick="showPage('about')" id="tab-about">About Us</a></li>
+    <li><a href="#" onclick="showPage('services')" id="tab-services">Services</a></li>
+    <li><a href="#" onclick="showPage('contact')" id="tab-contact">Contact</a></li>
+  </ul>
+  <a class="nav-cta" href="#" onclick="showPage('contact')">Talk to Us</a>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
 
-  <!-- Mobile nav drawer -->
-  <div class="mobile-nav" id="mobile-nav" role="menu">
-    <a href="#home" onclick="showPage('home')" id="mob-tab-home" class="active" role="menuitem">Home</a>
-    <a href="#about" onclick="showPage('about')" id="mob-tab-about" role="menuitem">About Us</a>
-    <a href="#services" onclick="showPage('services')" id="mob-tab-services" role="menuitem">Services</a>
-    <a href="#contact" onclick="showPage('contact')" id="mob-tab-contact" role="menuitem">Contact</a>
-    <button class="mob-cta" onclick="openPopup()">Talk to Us →</button>
-  </div>
-</header>
+<!-- Mobile nav drawer -->
+<div class="mobile-nav" id="mobile-nav">
+  <a href="#" onclick="showPage('home')" id="mob-tab-home" class="active">Home</a>
+  <a href="#" onclick="showPage('about')" id="mob-tab-about">About Us</a>
+  <a href="#" onclick="showPage('services')" id="mob-tab-services">Services</a>
+  <a href="#" onclick="showPage('contact')" id="mob-tab-contact">Contact</a>
+  <button class="mob-cta" onclick="showPage('contact')">Talk to Us →</button>
+</div>
 
 <!-- ══ POPUP MODAL ══ -->
-<div class="popup-overlay" id="popup-overlay" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+<div class="popup-overlay" id="popup-overlay">
   <div class="popup-box">
     <button class="popup-close" onclick="closePopup()" aria-label="Close">&times;</button>
 
     <div id="popup-form-state">
-      <h2 id="popup-title">Let's Talk</h2>
+      <h2>Let's Talk</h2>
       <p class="popup-sub">Tell us about the role. We come back with a search plan within 24 hours — no obligation.</p>
-
       <div class="fr2">
-        <div class="fg"><label for="p-name">Your Name *</label><input id="p-name" type="text" placeholder="Full name" autocomplete="name"></div>
-        <div class="fg"><label for="p-company">Company *</label><input id="p-company" type="text" placeholder="Company name" autocomplete="organization"></div>
+        <div class="fg"><label>Your Name *</label><input id="p-name" type="text" placeholder="Full name"></div>
+        <div class="fg"><label>Company *</label><input id="p-company" type="text" placeholder="Company name"></div>
       </div>
       <div class="fr2">
-        <div class="fg"><label for="p-email">Work Email *</label><input id="p-email" type="email" placeholder="Work email" autocomplete="email"></div>
-        <div class="fg"><label for="p-phone">Phone</label><input id="p-phone" type="tel" placeholder="+91 / +61 / +65 / +971" autocomplete="tel"></div>
+        <div class="fg"><label>Work Email *</label><input id="p-email" type="email" placeholder="Work email"></div>
+        <div class="fg"><label>Phone</label><input id="p-phone" type="tel" placeholder="+91 / +61 / +65 / +971"></div>
       </div>
-      <div class="fg"><label for="p-enquiry">What do you need?</label>
+      <div class="fg"><label>What do you need?</label>
         <select id="p-enquiry">
           <option value="">Select enquiry type</option>
           <option>IT Recruitment — Senior / Leadership Role</option>
@@ -472,7 +478,7 @@ footer{background:var(--navy);padding:52px 6% 28px}
           <option>Not sure yet — let's talk</option>
         </select>
       </div>
-      <div class="fg"><label for="p-message">Brief on the role</label>
+      <div class="fg"><label>Brief on the role</label>
         <textarea id="p-message" placeholder="Role title, level, location — the more you share, the faster we respond..."></textarea>
       </div>
       <button class="fsub" onclick="submitPopup()">Send Message &nbsp;→</button>
@@ -480,140 +486,142 @@ footer{background:var(--navy);padding:52px 6% 28px}
     </div>
 
     <div class="popup-success" id="popup-success">
-      <div class="tick">✅</div>
+      <div class="popup-tick">✅</div>
       <h3>Message Received</h3>
       <p>Thank you — we'll come back with a search plan within 24 hours on business days.</p>
     </div>
   </div>
 </div>
 
-<!-- ══ MAIN CONTENT ══ -->
-<main id="main-content">
-
 <!-- ══════════════════════════
      PAGE 1 — HOME
 ══════════════════════════ -->
-<article class="page active" id="page-home" aria-label="Home page">
+<div class="page active" id="page-home">
 
-  <section class="hero" aria-label="Hero — IT Recruitment Agency">
+  <!-- Hero -->
+  <div class="hero">
     <div class="hero-inner">
-      <div class="eyebrow"><span class="dot" aria-hidden="true"></span>IT Recruitment Agency · Bengaluru</div>
+      <div class="eyebrow"><span class="dot"></span>IT Recruitment Agency · Bengaluru</div>
       <h1>The Right Hire.<br><em>In 7–10 Days.</em></h1>
-      <div class="hero-line" aria-hidden="true"></div>
+      <div class="hero-line"></div>
       <p class="hero-sub">Senior IT and leadership recruitment for mid-size companies — placed with precision, speed, and a written SLA you can hold us to. No CV dumps. No silence at offer stage.</p>
       <div class="row">
-        <button class="btn-p" onclick="openPopup()">Start a Search &nbsp;→</button>
-        <a class="btn-s" href="#services" onclick="showPage('services')">See How We Work</a>
+        <a class="btn-p" href="#" onclick="showPage('contact')">Start a Search &nbsp;→</a>
+        <a class="btn-s" href="#" onclick="showPage('services')">See How We Work</a>
       </div>
     </div>
-    <p class="hero-geo" aria-label="Geographies served">India · Australia · Singapore · Middle East</p>
-  </section>
+    <div class="hero-geo">India · Australia · Singapore · Middle East</div>
+  </div>
 
-  <section class="promise" aria-label="Our three core promises">
+  <!-- Promise strip -->
+  <div class="promise">
     <div class="promise-inner">
       <div class="promise-item">
-        <div class="promise-icon" aria-hidden="true">⚡</div>
+        <div class="promise-icon">⚡</div>
         <h3>7–10 Day Shortlist</h3>
         <p>Written SLA signed before sourcing begins. 96% adherence across all mandates.</p>
       </div>
       <div class="promise-item">
-        <div class="promise-icon" aria-hidden="true">🎯</div>
+        <div class="promise-icon">🎯</div>
         <h3>3–5 Skill-Matched Profiles</h3>
         <p>Pre-screened for fit, motivation, and notice period. Not a CV dump of twenty.</p>
       </div>
       <div class="promise-item">
-        <div class="promise-icon" aria-hidden="true">🛡️</div>
+        <div class="promise-icon">🛡️</div>
         <h3>Intake to Joining Day</h3>
         <p>We own the full cycle. Counter-offer handling. 30-day replacement guarantee.</p>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section class="sec" aria-label="The real cost of a slow hire">
-    <header class="sh">
+  <!-- Problem -->
+  <div class="sec">
+    <div class="sh">
       <span class="ey">The Real Cost of a Slow Hire</span>
       <h2 class="st">Every day a senior role sits open,<br>your business pays for it.</h2>
       <p class="ss">Delayed deliveries. Overloaded teams. Missed quarters. The best candidate accepted an offer from someone who moved faster. Time-to-hire is a business metric — not just an HR one.</p>
-    </header>
+    </div>
     <div class="prob-grid">
       <div class="pc pc-1">
-        <p class="pc-lbl">What most agencies deliver</p>
-        <div class="pi"><h3>20 CVs. 3 worth reading.</h3><p>Job portal sourcing with no skill-match screening. Your hiring managers waste hours on profiles that were never going to work.</p></div>
-        <div class="pi"><h3>3–6 week turnaround.</h3><p>Slow process that costs you candidates and momentum simultaneously. The best senior professionals are off the market in 10–14 days.</p></div>
-        <div class="pi"><h3>Silence at offer stage.</h3><p>Most agencies disappear precisely when counter-offers happen, notice periods wobble, and joining confirmations matter most.</p></div>
+        <div class="pc-lbl">What most agencies deliver</div>
+        <div class="pi"><h4>20 CVs. 3 worth reading.</h4><p>Job portal sourcing with no skill-match screening. Your hiring managers waste hours on profiles that were never going to work.</p></div>
+        <div class="pi"><h4>3–6 week turnaround.</h4><p>Slow process that costs you candidates and momentum simultaneously. The best senior professionals are off the market in 10–14 days.</p></div>
+        <div class="pi"><h4>Silence at offer stage.</h4><p>Most agencies disappear precisely when counter-offers happen, notice periods wobble, and joining confirmations matter most.</p></div>
       </div>
       <div class="pc pc-2">
-        <p class="pc-lbl">What it actually costs you</p>
-        <div class="pi"><h3>Revenue delayed.</h3><p>Every week a Cloud Architect or Engineering Manager is missing, a delivery slips. The business cost is real and measurable — not abstract.</p></div>
-        <div class="pi"><h3>Team burnout.</h3><p>Your existing team absorbs the gap. Attrition risk rises. One open role quietly becomes two. The problem compounds.</p></div>
-        <div class="pi"><h3>The right candidate, elsewhere.</h3><p>Senior professionals make decisions fast. If your process takes six weeks, they accepted another offer in week two. Speed is a competitive requirement.</p></div>
+        <div class="pc-lbl">What it actually costs you</div>
+        <div class="pi"><h4>Revenue delayed.</h4><p>Every week a Cloud Architect or Engineering Manager is missing, a delivery slips. The business cost is real and measurable — not abstract.</p></div>
+        <div class="pi"><h4>Team burnout.</h4><p>Your existing team absorbs the gap. Attrition risk rises. One open role quietly becomes two. The problem compounds.</p></div>
+        <div class="pi"><h4>The right candidate, elsewhere.</h4><p>Senior professionals make decisions fast. If your process takes six weeks, they accepted another offer in week two. Speed is a competitive requirement.</p></div>
       </div>
       <div class="pc pc-3">
-        <p class="pc-lbl">What Scalex Consulting does</p>
-        <div class="pi"><h3>Shortlist in 7–10 days. Written.</h3><p>Committed in writing before sourcing begins. 96% adherence. We back our SLA because we know where the right candidates are before the search starts.</p></div>
-        <div class="pi"><h3>3–5 profiles. Every one vetted.</h3><p>Pre-screened for technical fit, cultural alignment, motivation, and notice period. You interview fewer people and close faster.</p></div>
-        <div class="pi"><h3>Intake to joining. We own it.</h3><p>Counter-offer handling, notice period management, weekly updates, and Day 1 joining confirmation. You never chase us for an update.</p></div>
+        <div class="pc-lbl">What Scalex Consulting does</div>
+        <div class="pi"><h4>Shortlist in 7–10 days. Written.</h4><p>Committed in writing before sourcing begins. 96% adherence. We back our SLA because we know where the right candidates are before the search starts.</p></div>
+        <div class="pi"><h4>3–5 profiles. Every one vetted.</h4><p>Pre-screened for technical fit, cultural alignment, motivation, and notice period. You interview fewer people and close faster.</p></div>
+        <div class="pi"><h4>Intake to joining. We own it.</h4><p>Counter-offer handling, notice period management, weekly updates, and Day 1 joining confirmation. You never chase us for an update.</p></div>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section class="why-strip" aria-label="Six reasons Scalex delivers where others don't">
-    <header class="sh">
+  <!-- Why Scalex -->
+  <div class="why-strip">
+    <div class="sh">
       <span class="ey ey-lt">Our Unique Strengths</span>
       <h2 class="st st-w">Six Reasons Scalex Delivers<br>Where Others Don't</h2>
       <p class="ss ss-w">Not marketing claims. Commitments we put in writing and measure on every mandate.</p>
-    </header>
+    </div>
     <div class="why-grid">
       <div class="why-card">
-        <div class="why-icon" aria-hidden="true">⚡</div>
-        <span class="why-tag">Speed</span>
-        <h3>7–10 Day Shortlist. In Writing.</h3>
+        <div class="why-icon">⚡</div>
+        <div class="why-tag">Speed</div>
+        <h4>7–10 Day Shortlist. In Writing.</h4>
         <p>We commit to a shortlist delivery date and sign it before we start. Speed comes from 18 years of knowing where the right candidates are — not from rushing.</p>
       </div>
       <div class="why-card">
-        <div class="why-icon" aria-hidden="true">🎯</div>
-        <span class="why-tag">Precision</span>
-        <h3>3–5 Profiles. Pre-Screened.</h3>
+        <div class="why-icon">🎯</div>
+        <div class="why-tag">Precision</div>
+        <h4>3–5 Profiles. Pre-Screened.</h4>
         <p>Technical fit, cultural alignment, salary expectations, motivation to move, notice period — all confirmed before the profile reaches you. Every candidate is worth your time.</p>
       </div>
       <div class="why-card">
-        <div class="why-icon" aria-hidden="true">🔗</div>
-        <span class="why-tag">Network</span>
-        <h3>Passive Candidates. Not Job Portals.</h3>
+        <div class="why-icon">🔗</div>
+        <div class="why-tag">Network</div>
+        <h4>Passive Candidates. Not Job Portals.</h4>
         <p>The right senior candidate for your role is almost certainly not applying anywhere. We reach them through 18 years of direct relationships — built mandate by mandate.</p>
       </div>
       <div class="why-card">
-        <div class="why-icon" aria-hidden="true">🛡️</div>
-        <span class="why-tag">Accountability</span>
-        <h3>Full Cycle. Intake to Day 1.</h3>
+        <div class="why-icon">🛡️</div>
+        <div class="why-tag">Accountability</div>
+        <h4>Full Cycle. Intake to Day 1.</h4>
         <p>Candidate prep before every round. Feedback within 24 hours. Counter-offer handled. Joining confirmed. 30-day replacement guarantee in writing on every placement.</p>
       </div>
       <div class="why-card">
-        <div class="why-icon" aria-hidden="true">📊</div>
-        <span class="why-tag">Transparency</span>
-        <h3>Friday Updates. Without Being Asked.</h3>
+        <div class="why-icon">📊</div>
+        <div class="why-tag">Transparency</div>
+        <h4>Friday Updates. Without Being Asked.</h4>
         <p>Every active client receives a weekly search update every Friday — pipeline status, profiles reviewed, candidates contacted. You never chase us for information.</p>
       </div>
       <div class="why-card">
-        <div class="why-icon" aria-hidden="true">🏆</div>
-        <span class="why-tag">Experience</span>
-        <h3>Enterprise Discipline. Boutique Focus.</h3>
-        <p>18 years managing enterprise accounts for Fortune 500 companies, global banks, and leading technology brands. Our founder's active doctoral research in AI &amp; workforce strategy means we understand not just who to hire — but why the right hire matters.</p>
+        <div class="why-icon">🏆</div>
+        <div class="why-tag">Experience</div>
+        <h4>Enterprise Discipline. Boutique Focus.</h4>
+        <p>18 years managing enterprise accounts for Fortune 500 companies, global banks, and leading technology brands. Our founder's active doctoral research in AI &amp; workforce strategy means we understand not just who to hire — but why the right hire matters at each stage of your organisation's transformation.</p>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section class="sec sec-alt" aria-label="Markets we serve">
-    <header class="sh">
+  <!-- Markets -->
+  <div class="sec sec-alt">
+    <div class="sh">
       <span class="ey">Where We Work</span>
       <h2 class="st">4 Geographies. One Standard.</h2>
       <p class="ss">The same SLA, the same process, the same accountability — whether you are hiring in Bengaluru, Sydney, Singapore, or Dubai.</p>
-    </header>
+    </div>
     <div class="mkt-row">
       <div class="mkt-card">
-        <div class="mkt-flag" aria-hidden="true">🇮🇳</div>
+        <div class="mkt-flag">🇮🇳</div>
         <h3>India</h3>
-        <p class="mkt-cities">Bengaluru · Hyderabad · Pune · Chennai · Noida · Mumbai</p>
+        <div class="mkt-cities">Bengaluru · Hyderabad · Pune · Chennai · Noida · Mumbai</div>
         <ul class="mkt-pts">
           <li>Home market — deepest network depth</li>
           <li>AI/ML roles: 53% skill deficit in the market</li>
@@ -622,90 +630,92 @@ footer{background:var(--navy);padding:52px 6% 28px}
         </ul>
       </div>
       <div class="mkt-card">
-        <div class="mkt-flag" aria-hidden="true">🇦🇺</div>
+        <div class="mkt-flag">🇦🇺</div>
         <h3>Australia</h3>
-        <p class="mkt-cities">Sydney · Melbourne · Brisbane · Perth</p>
+        <div class="mkt-cities">Sydney · Melbourne · Brisbane · Perth</div>
         <ul class="mkt-pts">
           <li>Tech hiring accelerating year-on-year</li>
-          <li>Acute shortage of Cloud, AI &amp; cybersecurity talent</li>
+          <li>Acute shortage of Cloud, AI & cybersecurity talent</li>
           <li>Indian IT professionals highly sought-after</li>
           <li>Strong preference for pre-screened candidates</li>
         </ul>
       </div>
       <div class="mkt-card">
-        <div class="mkt-flag" aria-hidden="true">🇸🇬</div>
+        <div class="mkt-flag">🇸🇬</div>
         <h3>Singapore</h3>
-        <p class="mkt-cities">CBD · One-North · Jurong East</p>
+        <div class="mkt-cities">CBD · One-North · Jurong East</div>
         <ul class="mkt-pts">
           <li>Asia's leading tech hub — skills-based hiring</li>
-          <li>AI, cloud &amp; data roles filled with urgency</li>
+          <li>AI, cloud & data roles filled with urgency</li>
           <li>Strong GCC and fintech leadership demand</li>
           <li>Cross-border India talent increasingly common</li>
         </ul>
       </div>
       <div class="mkt-card">
-        <div class="mkt-flag" aria-hidden="true">🇦🇪</div>
+        <div class="mkt-flag">🇦🇪</div>
         <h3>Middle East</h3>
-        <p class="mkt-cities">Dubai · Abu Dhabi · Riyadh · Doha</p>
+        <div class="mkt-cities">Dubai · Abu Dhabi · Riyadh · Doha</div>
         <ul class="mkt-pts">
           <li>Vision 2030 driving significant tech investment</li>
-          <li>Fintech, healthcare IT &amp; smart city scaling fast</li>
+          <li>Fintech, healthcare IT & smart city scaling fast</li>
           <li>High demand for Indian IT professionals</li>
           <li>Senior leadership placements across GCC</li>
         </ul>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section class="home-cta" aria-label="Call to action">
+  <!-- Home CTA -->
+  <div class="home-cta">
     <h2>Ready to Fill That Role<br>That Has Been Open Too Long?</h2>
     <p>One conversation. Tell us what you need. We come back with a search plan within 24 hours.</p>
     <div class="row" style="justify-content:center">
-      <button class="btn-w" onclick="openPopup()">Start a Conversation</button>
+      <a class="btn-w" href="#" onclick="showPage('contact')">Start a Conversation</a>
       <a class="btn-ow" href="mailto:bhumika@scalexconsulting.in">bhumika@scalexconsulting.in</a>
     </div>
-  </section>
+  </div>
 
   <footer>
     <div class="fg3">
       <div>
-        <p class="fb-name">Scale<span>X</span> Consulting</p>
-        <p class="fb-tl">IT Recruitment &amp; Leadership Hiring<br>Founded by Bhumika Srivastava · Bengaluru, India</p>
+        <div class="fb-name">Scale<span>X</span> Consulting</div>
+        <div class="fb-tl">IT Recruitment & Leadership Hiring<br>Founded by Bhumika Srivastava · Bengaluru, India</div>
         <div class="f-geos">
           <span class="fgt">🇮🇳 India</span><span class="fgt">🇦🇺 Australia</span><span class="fgt">🇸🇬 Singapore</span><span class="fgt">🇦🇪 Middle East</span>
         </div>
       </div>
-      <nav class="fc" aria-label="Footer navigation"><h4>Navigate</h4><ul>
+      <div class="fc"><h4>Navigate</h4><ul>
         <li><span onclick="showPage('home')">Home</span></li>
         <li><span onclick="showPage('about')">About Us</span></li>
         <li><span onclick="showPage('services')">Services</span></li>
         <li><span onclick="showPage('contact')">Contact</span></li>
-      </ul></nav>
-      <nav class="fc" aria-label="Services"><h4>Services</h4><ul>
+      </ul></div>
+      <div class="fc"><h4>Services</h4><ul>
         <li><span onclick="showPage('services')">IT Recruitment</span></li>
         <li><span onclick="showPage('services')">Non-IT Leadership Hiring</span></li>
         <li><span onclick="showPage('services')">Executive Search</span></li>
         <li><span onclick="showPage('services')">Retainer Model</span></li>
-      </ul></nav>
-      <address class="fc" style="font-style:normal"><h4>Contact</h4><ul>
+      </ul></div>
+      <div class="fc"><h4>Contact</h4><ul>
         <li><a href="mailto:bhumika@scalexconsulting.in">bhumika@scalexconsulting.in</a></li>
         <li><a href="https://scalexconsulting.in">scalexconsulting.in</a></li>
-        <li><a href="https://linkedin.com/in/bhumikasrivastava" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-      </ul></address>
+        <li><a href="https://linkedin.com/in/bhumikasrivastava" target="_blank">LinkedIn</a></li>
+      </ul></div>
     </div>
     <div class="fbot">
       <p>© 2026 Scalex Consulting · Bengaluru, Karnataka, India · All rights reserved</p>
       <p><a href="#">Privacy Policy</a>&nbsp;·&nbsp;<a href="#">Terms of Service</a></p>
     </div>
   </footer>
-</article>
+</div>
 
 <!-- ══════════════════════════
      PAGE 2 — ABOUT US
 ══════════════════════════ -->
-<article class="page" id="page-about" aria-label="About Scalex Consulting">
+<div class="page" id="page-about">
 
-  <section class="about-hero" aria-label="About overview">
+  <!-- About Hero -->
+  <div class="about-hero">
     <div class="about-hero-left">
       <span class="ey ey-lt" style="margin-bottom:14px;display:inline-block">About Scalex Consulting</span>
       <h1>Built on 18 Years of Enterprise Staffing Experience</h1>
@@ -713,50 +723,64 @@ footer{background:var(--navy);padding:52px 6% 28px}
       <p style="color:rgba(255,255,255,.65);font-size:15px;line-height:1.8">We place senior IT and non-IT leadership talent for mid-size companies across India, Australia, Singapore, and the Middle East — with a written SLA, a capped mandate model, and full-cycle accountability that most agencies have never offered.</p>
       <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(2,195,154,.1);border:1px solid rgba(2,195,154,.3);border-radius:4px;padding:7px 14px;margin-top:8px"><span style="font-size:11px;font-weight:700;color:#02C39A;letter-spacing:1.5px;text-transform:uppercase">Doctoral Researcher · AI &amp; Workforce Strategy</span></div>
     </div>
-    <div class="about-stats" aria-label="Key statistics">
-      <div class="astat"><div class="astat-num">18</div><div class="astat-lbl">Years Enterprise<br>Staffing Experience</div></div>
-      <div class="astat"><div class="astat-num">96%</div><div class="astat-lbl">SLA Adherence Across<br>All Active Mandates</div></div>
-      <div class="astat"><div class="astat-num">94%+</div><div class="astat-lbl">Client Retention Rate<br>Across Portfolio</div></div>
-      <div class="astat"><div class="astat-num">60+</div><div class="astat-lbl">Enterprise Accounts<br>Managed Directly</div></div>
+    <div class="about-stats">
+      <div class="astat">
+        <div class="astat-num">18</div>
+        <div class="astat-lbl">Years Enterprise<br>Staffing Experience</div>
+      </div>
+      <div class="astat">
+        <div class="astat-num">96%</div>
+        <div class="astat-lbl">SLA Adherence Across<br>All Active Mandates</div>
+      </div>
+      <div class="astat">
+        <div class="astat-num">94%+</div>
+        <div class="astat-lbl">Client Retention Rate<br>Across Portfolio</div>
+      </div>
+      <div class="astat">
+        <div class="astat-num">60+</div>
+        <div class="astat-lbl">Enterprise Accounts<br>Managed Directly</div>
+      </div>
     </div>
-  </section>
+  </div>
 
-  <section class="sec" aria-label="Founder — Bhumika Srivastava">
-    <header class="sh">
+  <!-- Founder -->
+  <div class="sec">
+    <div class="sh">
       <span class="ey">The Founder</span>
       <h2 class="st">Meet Bhumika Srivastava</h2>
-      <p class="ss">Director &amp; Founder — Scalex Consulting</p>
-    </header>
+      <p class="ss">Director & Founder — Scalex Consulting</p>
+    </div>
     <div class="founder-grid">
-      <aside class="founder-photo" aria-label="Founder credentials">
-        <div class="founder-initials" aria-hidden="true">BS</div>
-        <p class="founder-name">Bhumika Srivastava</p>
-        <p class="founder-title">Founder &amp; Director, Scalex Consulting</p>
+      <div class="founder-photo">
+        <div class="founder-initials">BS</div>
+        <div class="founder-name">Bhumika Srivastava</div>
+        <div class="founder-title">Founder & Director, Scalex Consulting</div>
         <div class="founder-creds">
           <div class="cred">Doctoral Researcher — AI-Driven Workforce Strategy &amp; Strategic Management</div>
           <div class="cred">Harvard University — Organisational Leadership Certification</div>
           <div class="cred">MEDDIC Sales Methodology Certification</div>
           <div class="cred">18 years in enterprise staffing — Adecco · Indeed and leading staffing organisations</div>
-          <div class="cred">60+ enterprise MSP accounts managed with full P&amp;L ownership</div>
+          <div class="cred">60+ enterprise MSP accounts managed with full P&L ownership</div>
           <div class="cred">Based in Bengaluru, Karnataka, India</div>
         </div>
-      </aside>
-      <article class="founder-bio">
-        <h2>The Story Behind Scalex</h2>
+      </div>
+      <div class="founder-bio">
+        <h3>The Story Behind Scalex</h3>
         <p>After 18 years in enterprise staffing — managing recruitment and account relationships for Fortune 500 companies, global financial institutions, and leading technology brands — the answer to what mid-size companies actually need from a recruitment partner became clear.</p>
         <p>Not a large agency where their mandate is one of hundreds. Not a junior recruiter learning on their time. A specialist who has sat in those rooms, managed those escalations, and built the networks that actually produce the right hire. Someone who treats every mandate with the rigour of a retained executive search — regardless of level.</p>
-        <p>Bhumika held senior roles at Adecco, Indeed, and leading staffing organisations, where she led large-scale staffing engagements, ran 60+ enterprise MSP accounts with full P&amp;L ownership, and built the relationships and discipline that Scalex Consulting draws on for every search today.</p>
+        <p>Bhumika held senior roles at Adecco, Indeed, and leading staffing organisations, where she led large-scale staffing engagements, ran 60+ enterprise MSP accounts with full P&L ownership, and built the relationships and discipline that Scalex Consulting draws on for every search today.</p>
         <p>Scalex was founded with one principle: cap the mandates, raise the standard, and deliver results the client can measure — in days, not weeks.</p>
         <p>Bhumika is also a doctoral researcher in Strategic Management, studying how organisations navigate AI-driven workforce transitions — balancing employment continuity, revenue resilience, and employer brand integrity. This research gives Scalex Consulting a distinctive lens that goes beyond placement: an understanding of how the talent decisions companies make today shape their organisational capability for the next decade.</p>
         <div class="quote-block">
-          <blockquote>"The companies that hire right today are not just filling roles — they are building the organisational capability to survive an AI-driven decade. That is the intersection where Scalex Consulting operates."</blockquote>
-          <cite>— Bhumika Srivastava, Founder &amp; Director</cite>
+          <p>"The companies that hire right today are not just filling roles — they are building the organisational capability to survive an AI-driven decade. That is the intersection where Scalex Consulting operates."</p>
+          <span>— Bhumika Srivastava, Founder & Director</span>
         </div>
-      </article>
+      </div>
     </div>
-  </section>
+  </div>
 
-  <section class="sec" style="background:var(--navy)" aria-label="Research insight — AI and workforce strategy">
+  <!-- Research Insight -->
+  <div class="sec" style="background:var(--navy)">
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center" class="research-grid">
       <div>
         <span class="ey ey-lt" style="margin-bottom:14px;display:inline-block">Research Insight</span>
@@ -767,87 +791,120 @@ footer{background:var(--navy);padding:52px 6% 28px}
       </div>
       <div style="display:flex;flex-direction:column;gap:16px">
         <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:24px 26px">
-          <p style="font-size:11px;font-weight:700;color:var(--lteal);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:10px">Research Focus</p>
-          <h3 style="font-family:var(--d);font-size:16px;font-weight:600;color:var(--white);margin-bottom:8px">AI-Driven Workforce Transitions</h3>
+          <div style="font-size:11px;font-weight:700;color:var(--lteal);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:10px">Research Focus</div>
+          <h4 style="font-family:var(--d);font-size:16px;font-weight:600;color:var(--white);margin-bottom:8px">AI-Driven Workforce Transitions</h4>
           <p style="font-size:13.5px;color:rgba(255,255,255,.55);line-height:1.65">How Indian and global organisations sustainably manage the shift to AI-augmented teams — without sacrificing employment continuity or employer brand.</p>
         </div>
         <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:24px 26px">
-          <p style="font-size:11px;font-weight:700;color:var(--lteal);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:10px">Why It Matters for Your Hiring</p>
-          <h3 style="font-family:var(--d);font-size:16px;font-weight:600;color:var(--white);margin-bottom:8px">The Right Hire for the Right Stage</h3>
+          <div style="font-size:11px;font-weight:700;color:var(--lteal);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:10px">Why It Matters for Your Hiring</div>
+          <h4 style="font-family:var(--d);font-size:16px;font-weight:600;color:var(--white);margin-bottom:8px">The Right Hire for the Right Stage</h4>
           <p style="font-size:13.5px;color:rgba(255,255,255,.55);line-height:1.65">A Cloud Architect hired today is your VP Engineering in four years. An AI/ML Engineer hired for a pilot becomes your platform lead when that pilot scales. We understand the trajectory — not just the immediate requirement.</p>
         </div>
         <div style="background:var(--teal);border-radius:12px;padding:20px 26px">
-          <blockquote style="font-size:14px;color:var(--white);line-height:1.75;font-style:italic">"The companies that hire right today are not just filling roles — they are building the organisational capability to survive an AI-driven decade."</blockquote>
-          <cite style="font-size:12px;color:rgba(255,255,255,.7);font-weight:600;margin-top:10px;display:block;font-style:normal">— Bhumika Srivastava, Founder &amp; Director</cite>
+          <p style="font-size:14px;color:var(--white);line-height:1.75;font-style:italic">"The companies that hire right today are not just filling roles — they are building the organisational capability to survive an AI-driven decade."</p>
+          <span style="font-size:12px;color:rgba(255,255,255,.7);font-weight:600;margin-top:10px;display:block">— Bhumika Srivastava, Founder & Director</span>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section class="sec sec-alt" aria-label="Our values">
-    <header class="sh">
+  <!-- Mission & Values -->
+  <div class="sec sec-alt">
+    <div class="sh">
       <span class="ey">Our Values</span>
       <h2 class="st">What We Stand For</h2>
       <p class="ss">The principles that govern every mandate we take on — and every candidate we represent.</p>
-    </header>
-    <div class="mission-grid">
-      <div class="mv-card"><div class="mv-icon" aria-hidden="true">⚡</div><h3>Speed Without Shortcuts</h3><p>A 7–10 day shortlist only has value if every profile in it is worth the client's time. We never sacrifice skill-match quality for turnaround speed. Both are non-negotiable.</p></div>
-      <div class="mv-card"><div class="mv-icon" aria-hidden="true">📊</div><h3>Transparency at Every Step</h3><p>No false promises. No inflated candidate counts. You know exactly where the search stands every week — because we send a written update every Friday, without being asked.</p></div>
-      <div class="mv-card"><div class="mv-icon" aria-hidden="true">🤝</div><h3>Candidates Are People, Not Pipeline</h3><p>Every candidate gets a structured call, a prep session before every interview, and honest feedback after every round. We never ghost. Today's candidate is tomorrow's referral or client.</p></div>
-      <div class="mv-card"><div class="mv-icon" aria-hidden="true">🎯</div><h3>Accountability Over Volume</h3><p>We cap active mandates deliberately. Every search gets senior, focused attention — not whatever capacity remains after managing twenty other clients simultaneously.</p></div>
-      <div class="mv-card"><div class="mv-icon" aria-hidden="true">🏆</div><h3>Long-Term Over Short-Term</h3><p>We turn down mandates we cannot do well. We prefer five excellent placements to twenty average ones. Our 94%+ client retention rate is the proof of that choice.</p></div>
-      <div class="mv-card"><div class="mv-icon" aria-hidden="true">🌏</div><h3>One Standard Across All Markets</h3><p>The same SLA, the same process, the same accountability — whether we are filling a role in Bengaluru, Sydney, Singapore, or Dubai. Geography does not change the standard.</p></div>
     </div>
-  </section>
+    <div class="mission-grid">
+      <div class="mv-card">
+        <div class="mv-icon">⚡</div>
+        <h4>Speed Without Shortcuts</h4>
+        <p>A 7–10 day shortlist only has value if every profile in it is worth the client's time. We never sacrifice skill-match quality for turnaround speed. Both are non-negotiable.</p>
+      </div>
+      <div class="mv-card">
+        <div class="mv-icon">📊</div>
+        <h4>Transparency at Every Step</h4>
+        <p>No false promises. No inflated candidate counts. You know exactly where the search stands every week — because we send a written update every Friday, without being asked.</p>
+      </div>
+      <div class="mv-card">
+        <div class="mv-icon">🤝</div>
+        <h4>Candidates Are People, Not Pipeline</h4>
+        <p>Every candidate gets a structured call, a prep session before every interview, and honest feedback after every round. We never ghost. Today's candidate is tomorrow's referral or client.</p>
+      </div>
+      <div class="mv-card">
+        <div class="mv-icon">🎯</div>
+        <h4>Accountability Over Volume</h4>
+        <p>We cap active mandates deliberately. Every search gets senior, focused attention — not whatever capacity remains after managing twenty other clients simultaneously.</p>
+      </div>
+      <div class="mv-card">
+        <div class="mv-icon">🏆</div>
+        <h4>Long-Term Over Short-Term</h4>
+        <p>We turn down mandates we cannot do well. We prefer five excellent placements to twenty average ones. Our 94%+ client retention rate is the proof of that choice.</p>
+      </div>
+      <div class="mv-card">
+        <div class="mv-icon">🌏</div>
+        <h4>One Standard Across All Markets</h4>
+        <p>The same SLA, the same process, the same accountability — whether we are filling a role in Bengaluru, Sydney, Singapore, or Dubai. Geography does not change the standard.</p>
+      </div>
+    </div>
+  </div>
 
   <footer>
     <div class="fg3">
       <div>
-        <p class="fb-name">Scale<span>X</span> Consulting</p>
-        <p class="fb-tl">IT Recruitment &amp; Leadership Hiring<br>Founded by Bhumika Srivastava · Bengaluru, India</p>
-        <div class="f-geos"><span class="fgt">🇮🇳 India</span><span class="fgt">🇦🇺 Australia</span><span class="fgt">🇸🇬 Singapore</span><span class="fgt">🇦🇪 Middle East</span></div>
+        <div class="fb-name">Scale<span>X</span> Consulting</div>
+        <div class="fb-tl">IT Recruitment & Leadership Hiring<br>Founded by Bhumika Srivastava · Bengaluru, India</div>
+        <div class="f-geos">
+          <span class="fgt">🇮🇳 India</span><span class="fgt">🇦🇺 Australia</span><span class="fgt">🇸🇬 Singapore</span><span class="fgt">🇦🇪 Middle East</span>
+        </div>
       </div>
-      <nav class="fc" aria-label="Footer navigation"><h4>Navigate</h4><ul>
-        <li><span onclick="showPage('home')">Home</span></li><li><span onclick="showPage('about')">About Us</span></li>
-        <li><span onclick="showPage('services')">Services</span></li><li><span onclick="showPage('contact')">Contact</span></li>
-      </ul></nav>
-      <nav class="fc" aria-label="Services"><h4>Services</h4><ul>
-        <li><span onclick="showPage('services')">IT Recruitment</span></li><li><span onclick="showPage('services')">Non-IT Leadership Hiring</span></li>
-        <li><span onclick="showPage('services')">Executive Search</span></li><li><span onclick="showPage('services')">Retainer Model</span></li>
-      </ul></nav>
-      <address class="fc" style="font-style:normal"><h4>Contact</h4><ul>
+      <div class="fc"><h4>Navigate</h4><ul>
+        <li><span onclick="showPage('home')">Home</span></li>
+        <li><span onclick="showPage('about')">About Us</span></li>
+        <li><span onclick="showPage('services')">Services</span></li>
+        <li><span onclick="showPage('contact')">Contact</span></li>
+      </ul></div>
+      <div class="fc"><h4>Services</h4><ul>
+        <li><span onclick="showPage('services')">IT Recruitment</span></li>
+        <li><span onclick="showPage('services')">Non-IT Leadership Hiring</span></li>
+        <li><span onclick="showPage('services')">Executive Search</span></li>
+        <li><span onclick="showPage('services')">Retainer Model</span></li>
+      </ul></div>
+      <div class="fc"><h4>Contact</h4><ul>
         <li><a href="mailto:bhumika@scalexconsulting.in">bhumika@scalexconsulting.in</a></li>
         <li><a href="https://scalexconsulting.in">scalexconsulting.in</a></li>
-        <li><a href="https://linkedin.com/in/bhumikasrivastava" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-      </ul></address>
+        <li><a href="https://linkedin.com/in/bhumikasrivastava" target="_blank">LinkedIn</a></li>
+      </ul></div>
     </div>
     <div class="fbot">
       <p>© 2026 Scalex Consulting · Bengaluru, Karnataka, India · All rights reserved</p>
       <p><a href="#">Privacy Policy</a>&nbsp;·&nbsp;<a href="#">Terms of Service</a></p>
     </div>
   </footer>
-</article>
+</div>
 
 <!-- ══════════════════════════
      PAGE 3 — SERVICES
 ══════════════════════════ -->
-<article class="page" id="page-services" aria-label="Services page">
+<div class="page" id="page-services">
 
-  <section class="svc-hero" aria-label="Services overview">
+  <!-- Services Hero -->
+  <div class="svc-hero">
     <span class="ey ey-lt" style="margin-bottom:14px;display:inline-block">Our Services</span>
-    <h1>IT &amp; Leadership Recruitment<br>Across 4 Geographies</h1>
+    <h1>IT & Leadership Recruitment<br>Across 4 Geographies</h1>
     <p>Senior white collar and leadership hiring for mid-size companies — IT and non-IT, placed with a written SLA and full-cycle accountability.</p>
-  </section>
+  </div>
 
-  <section class="sec" aria-label="Roles we recruit for">
-    <header class="sh">
+  <!-- What We Place -->
+  <div class="sec">
+    <div class="sh">
       <span class="ey">What We Place</span>
       <h2 class="st">Roles We Recruit For</h2>
       <p class="ss">Senior and leadership roles across IT and non-IT sectors — placed with the same rigour and accountability regardless of domain.</p>
-    </header>
+    </div>
     <div class="role-grid">
       <div class="role-card">
-        <div class="rc-h it"><h3>IT &amp; Technology Roles</h3><p>Engineering · Cloud · AI/ML · Data · Cybersecurity · Leadership</p></div>
+        <div class="rc-h it"><h3>IT & Technology Roles</h3><p>Engineering · Cloud · AI/ML · Data · Cybersecurity · Leadership</p></div>
         <div class="rc-b">
           <ul class="rl">
             <li>Engineering Manager</li><li>Delivery Manager</li>
@@ -873,181 +930,191 @@ footer{background:var(--navy);padding:52px 6% 28px}
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section class="sec sec-alt" aria-label="Our recruitment process">
-    <header class="sh">
+  <!-- How We Work -->
+  <div class="sec sec-alt">
+    <div class="sh">
       <span class="ey">Our Process</span>
       <h2 class="st">End-to-End Recruitment Workflow</h2>
       <p class="ss">From signed mandate to Day 1 joining confirmation — we own every step so you do not have to manage the process alongside your own work.</p>
-    </header>
-    <ol class="proc-grid" style="list-style:none">
-      <li class="ps"><div class="pn" aria-hidden="true">01</div><span class="pt">Day 0</span><h3>Intake &amp; Briefing</h3><p>30-minute mandate call. Role scope, team context, expectations, timeline, and what has failed before. Signed agreement before sourcing begins — no exceptions.</p></li>
-      <li class="ps"><div class="pn" aria-hidden="true">02</div><span class="pt">Days 1–7</span><h3>Active Search</h3><p>Passive network outreach, Boolean LinkedIn search, Naukri Resdex, and referral chains. We reach the senior candidate who is not applying anywhere. Target: 15–20 raw profiles per mandate.</p></li>
-      <li class="ps"><div class="pn" aria-hidden="true">03</div><span class="pt">Days 2–8</span><h3>Candidate Screening</h3><p>Structured 30-minute call per candidate. Technical fit, motivation to move, salary expectation, notice period, and competing offers — all confirmed before submission.</p></li>
-      <li class="ps"><div class="pn" aria-hidden="true">04</div><span class="pt">Days 7–10</span><h3>Shortlist Delivery</h3><p>3–5 profiles with written commentary per candidate — why this person, key strengths, notice period, and any risk flags. Every profile submitted is a recommendation, not a possibility.</p></li>
-      <li class="ps"><div class="pn" aria-hidden="true">05</div><span class="pt">Days 10–21</span><h3>Interview Coordination</h3><p>We own scheduling, candidate prep before every round, and feedback collected within 24 hours of each interview. Friday search updates to every active client — without being asked.</p></li>
-      <li class="ps"><div class="pn" aria-hidden="true">06</div><span class="pt">Days 18–45</span><h3>Offer to Joining</h3><p>Offer bridged on both sides. Counter-offer handled before it becomes a resignation. Weekly candidate check-ins through notice. Day 1 joining confirmed. 30-day free replacement guarantee in writing.</p></li>
-    </ol>
-  </section>
+    </div>
+    <div class="proc-grid">
+      <div class="ps"><div class="pn">01</div><div class="pt">Day 0</div><h4>Intake & Briefing</h4><p>30-minute mandate call. Role scope, team context, expectations, timeline, and what has failed before. Signed agreement before sourcing begins — no exceptions. We leave knowing the role better than most internal TA teams.</p></div>
+      <div class="ps"><div class="pn">02</div><div class="pt">Days 1–7</div><h4>Active Search</h4><p>Passive network outreach, Boolean LinkedIn search, Naukri Resdex, and referral chains. We reach the senior candidate who is not applying anywhere. Target: 15–20 raw profiles per mandate.</p></div>
+      <div class="ps"><div class="pn">03</div><div class="pt">Days 2–8</div><h4>Candidate Screening</h4><p>Structured 30-minute call per candidate. Technical fit, motivation to move, salary expectation, notice period, and competing offers — all confirmed before a profile is submitted to you.</p></div>
+      <div class="ps"><div class="pn">04</div><div class="pt">Days 7–10</div><h4>Shortlist Delivery</h4><p>3–5 profiles with written commentary per candidate — why this person, key strengths, notice period, and any risk flags. Not just CVs. Every profile submitted is a recommendation, not a possibility.</p></div>
+      <div class="ps"><div class="pn">05</div><div class="pt">Days 10–21</div><h4>Interview Coordination</h4><p>We own scheduling, candidate prep before every round, and feedback collected within 24 hours of each interview. Friday search updates to every active client — without being asked.</p></div>
+      <div class="ps"><div class="pn">06</div><div class="pt">Days 18–45</div><h4>Offer to Joining</h4><p>Offer bridged on both sides. Counter-offer handled before it becomes a resignation. Weekly candidate check-ins through notice. Day 1 joining confirmed. 30-day free replacement guarantee in writing.</p></div>
+    </div>
+  </div>
 
-  <section class="sec" aria-label="Sectors we recruit for">
-    <header class="sh">
+  <!-- Sectors -->
+  <div class="sec">
+    <div class="sh">
       <span class="ey">Industries</span>
       <h2 class="st">Sectors We Recruit For</h2>
       <p class="ss">Deep familiarity with the roles, skill sets, and hiring dynamics of every sector we operate in — across IT and non-IT.</p>
-    </header>
+    </div>
     <div class="sec2-grid">
       <div class="scard">
-        <h3>IT &amp; Technology</h3>
+        <h3>IT & Technology</h3>
         <div class="tags">
-          <span class="tag">IT Services &amp; Consulting</span><span class="tag">Product Engineering &amp; SaaS</span>
-          <span class="tag">Cloud &amp; DevOps</span><span class="tag">Fintech &amp; Banking Technology</span>
-          <span class="tag">AI/ML &amp; Data Analytics</span><span class="tag">Cybersecurity</span>
-          <span class="tag">Automotive Tech &amp; IoT</span><span class="tag">EdTech &amp; HealthTech</span>
-          <span class="tag">GCC Centres</span><span class="tag">Semiconductor &amp; Embedded</span>
+          <span class="tag">IT Services & Consulting</span><span class="tag">Product Engineering & SaaS</span>
+          <span class="tag">Cloud & DevOps</span><span class="tag">Fintech & Banking Technology</span>
+          <span class="tag">AI/ML & Data Analytics</span><span class="tag">Cybersecurity</span>
+          <span class="tag">Automotive Tech & IoT</span><span class="tag">EdTech & HealthTech</span>
+          <span class="tag">GCC Centres</span><span class="tag">Semiconductor & Embedded</span>
         </div>
       </div>
       <div class="scard">
         <h3>Non-IT Sectors</h3>
         <div class="tags">
-          <span class="tag">Banking, Financial Services &amp; Insurance</span>
-          <span class="tag">Manufacturing &amp; Engineering</span>
-          <span class="tag">Healthcare &amp; Pharmaceuticals</span>
-          <span class="tag">Consumer Goods &amp; Retail</span>
-          <span class="tag">E-commerce &amp; D2C</span>
+          <span class="tag">Banking, Financial Services & Insurance</span>
+          <span class="tag">Manufacturing & Engineering</span>
+          <span class="tag">Healthcare & Pharmaceuticals</span>
+          <span class="tag">Consumer Goods & Retail</span>
+          <span class="tag">E-commerce & D2C</span>
           <span class="tag">Professional Services</span>
-          <span class="tag">Logistics &amp; Supply Chain</span>
-          <span class="tag">Real Estate &amp; Infrastructure</span>
+          <span class="tag">Logistics & Supply Chain</span>
+          <span class="tag">Real Estate & Infrastructure</span>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section class="sec sec-alt" aria-label="Comparison with competitors">
-    <header class="sh">
+  <!-- Why Scalex comparison -->
+  <div class="sec sec-alt">
+    <div class="sh">
       <span class="ey">The Honest Comparison</span>
       <h2 class="st">Why Scalex Over the Competition</h2>
       <p class="ss">Give us the mandate that has been open 45 days — the one two agencies have already failed on. Let the shortlist speak for itself.</p>
-    </header>
-    <div style="overflow-x:auto">
-      <table class="ctab">
-        <thead>
-          <tr>
-            <th scope="col">What matters when hiring senior talent</th>
-            <th class="ch" scope="col">Large Agency</th>
-            <th class="ch" scope="col">Generic Recruiter</th>
-            <th class="ch" scope="col">Job Portal / AI Tool</th>
-            <th class="cs" scope="col">Scalex Consulting</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>Mid-to-Senior specialisation</td><td><span class="cx">✗</span> All levels</td><td><span class="cx">✗</span> Mixed focus</td><td><span class="cx">✗</span> Algorithm-driven</td><td class="sc"><span class="tk">✓</span> Mid &amp; Senior only</td></tr>
-          <tr><td>Written SLA on shortlist delivery</td><td><span class="cx">✗</span> No commitment</td><td><span class="cx">✗</span> No commitment</td><td><span class="cx">✗</span> No commitment</td><td class="sc"><span class="tk">✓</span> Signed before search begins</td></tr>
-          <tr><td>Passive candidate network access</td><td><span class="pt2">~</span> Some network</td><td><span class="cx">✗</span> Job portals only</td><td><span class="cx">✗</span> Active candidates only</td><td class="sc"><span class="tk">✓</span> 18-year direct relationships</td></tr>
-          <tr><td>IT &amp; Non-IT sector coverage</td><td><span class="pt2">~</span> Mostly IT</td><td><span class="cx">✗</span> Narrow spec</td><td><span class="cx">✗</span> Generic</td><td class="sc"><span class="tk">✓</span> Both sectors, equal depth</td></tr>
-          <tr><td>4-geography capability</td><td><span class="cx">✗</span> Usually India only</td><td><span class="cx">✗</span> Single market</td><td><span class="cx">✗</span> No relationship</td><td class="sc"><span class="tk">✓</span> India · AU · SG · ME</td></tr>
-          <tr><td>Weekly transparency updates</td><td><span class="cx">✗</span> Only if chased</td><td><span class="cx">✗</span> Only if chased</td><td><span class="cx">✗</span> Not applicable</td><td class="sc"><span class="tk">✓</span> Every Friday, unprompted</td></tr>
-          <tr><td>Full offer-to-joining management</td><td><span class="cx">✗</span> Drops off at offer</td><td><span class="cx">✗</span> Drops off at offer</td><td><span class="cx">✗</span> Not applicable</td><td class="sc"><span class="tk">✓</span> Managed to Day 1 joining</td></tr>
-          <tr><td>30-day free replacement guarantee</td><td><span class="pt2">~</span> Fine print</td><td><span class="cx">✗</span> Rarely offered</td><td><span class="cx">✗</span> Not applicable</td><td class="sc"><span class="tk">✓</span> Standard, in writing</td></tr>
-          <tr><td>Capped mandates — dedicated attention</td><td><span class="cx">✗</span> Hundreds of roles</td><td><span class="cx">✗</span> No cap</td><td><span class="cx">✗</span> Not applicable</td><td class="sc"><span class="tk">✓</span> Max 10 active mandates</td></tr>
-          <tr><td>AI &amp; Workforce Strategy Insight</td><td><span class="cx">✗</span> Not offered</td><td><span class="cx">✗</span> Not offered</td><td><span class="cx">✗</span> Not applicable</td><td class="sc"><span class="tk">✓</span> Active doctoral research</td></tr>
-        </tbody>
-      </table>
     </div>
-  </section>
+    <div style="overflow-x:auto">
+    <table class="ctab">
+      <thead>
+        <tr>
+          <th>What matters when hiring senior talent</th>
+          <th class="ch">Large Agency</th>
+          <th class="ch">Generic Recruiter</th>
+          <th class="ch">Job Portal / AI Tool</th>
+          <th class="cs">Scalex Consulting</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Mid-to-Senior specialisation</td><td><span class="cx">✗</span> All levels</td><td><span class="cx">✗</span> Mixed focus</td><td><span class="cx">✗</span> Algorithm-driven</td><td class="sc"><span class="tk">✓</span> Mid & Senior only</td></tr>
+        <tr><td>Written SLA on shortlist delivery</td><td><span class="cx">✗</span> No commitment</td><td><span class="cx">✗</span> No commitment</td><td><span class="cx">✗</span> No commitment</td><td class="sc"><span class="tk">✓</span> Signed before search begins</td></tr>
+        <tr><td>Passive candidate network access</td><td><span class="pt2">~</span> Some network</td><td><span class="cx">✗</span> Job portals only</td><td><span class="cx">✗</span> Active candidates only</td><td class="sc"><span class="tk">✓</span> 18-year direct relationships</td></tr>
+        <tr><td>IT & Non-IT sector coverage</td><td><span class="pt2">~</span> Mostly IT</td><td><span class="cx">✗</span> Narrow spec</td><td><span class="cx">✗</span> Generic</td><td class="sc"><span class="tk">✓</span> Both sectors, equal depth</td></tr>
+        <tr><td>4-geography capability</td><td><span class="cx">✗</span> Usually India only</td><td><span class="cx">✗</span> Single market</td><td><span class="cx">✗</span> No relationship</td><td class="sc"><span class="tk">✓</span> India · AU · SG · ME</td></tr>
+        <tr><td>Weekly transparency updates</td><td><span class="cx">✗</span> Only if chased</td><td><span class="cx">✗</span> Only if chased</td><td><span class="cx">✗</span> Not applicable</td><td class="sc"><span class="tk">✓</span> Every Friday, unprompted</td></tr>
+        <tr><td>Full offer-to-joining management</td><td><span class="cx">✗</span> Drops off at offer</td><td><span class="cx">✗</span> Drops off at offer</td><td><span class="cx">✗</span> Not applicable</td><td class="sc"><span class="tk">✓</span> Managed to Day 1 joining</td></tr>
+        <tr><td>30-day free replacement guarantee</td><td><span class="pt2">~</span> Fine print</td><td><span class="cx">✗</span> Rarely offered</td><td><span class="cx">✗</span> Not applicable</td><td class="sc"><span class="tk">✓</span> Standard, in writing</td></tr>
+        <tr><td>Capped mandates — dedicated attention</td><td><span class="cx">✗</span> Hundreds of roles</td><td><span class="cx">✗</span> No cap</td><td><span class="cx">✗</span> Not applicable</td><td class="sc"><span class="tk">✓</span> Max 10 active mandates</td></tr>
+        <tr><td>AI &amp; Workforce Strategy Insight</td><td><span class="cx">✗</span> Not offered</td><td><span class="cx">✗</span> Not offered</td><td><span class="cx">✗</span> Not applicable</td><td class="sc"><span class="tk">✓</span> Active doctoral research</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
 
-  <section class="home-cta" aria-label="Services call to action">
+  <!-- Services CTA -->
+  <div class="home-cta">
     <h2>Have a Role We Can Help With?</h2>
     <p>Tell us the mandate. We come back with a search plan within 24 hours — no obligation.</p>
     <div class="row" style="justify-content:center">
-      <button class="btn-w" onclick="openPopup()">Get in Touch</button>
+      <a class="btn-w" href="#" onclick="showPage('contact')">Get in Touch</a>
       <a class="btn-ow" href="mailto:bhumika@scalexconsulting.in">bhumika@scalexconsulting.in</a>
     </div>
-  </section>
+  </div>
 
   <footer>
     <div class="fg3">
       <div>
-        <p class="fb-name">Scale<span>X</span> Consulting</p>
-        <p class="fb-tl">IT Recruitment &amp; Leadership Hiring<br>Founded by Bhumika Srivastava · Bengaluru, India</p>
-        <div class="f-geos"><span class="fgt">🇮🇳 India</span><span class="fgt">🇦🇺 Australia</span><span class="fgt">🇸🇬 Singapore</span><span class="fgt">🇦🇪 Middle East</span></div>
+        <div class="fb-name">Scale<span>X</span> Consulting</div>
+        <div class="fb-tl">IT Recruitment & Leadership Hiring<br>Founded by Bhumika Srivastava · Bengaluru, India</div>
+        <div class="f-geos">
+          <span class="fgt">🇮🇳 India</span><span class="fgt">🇦🇺 Australia</span><span class="fgt">🇸🇬 Singapore</span><span class="fgt">🇦🇪 Middle East</span>
+        </div>
       </div>
-      <nav class="fc" aria-label="Footer navigation"><h4>Navigate</h4><ul>
-        <li><span onclick="showPage('home')">Home</span></li><li><span onclick="showPage('about')">About Us</span></li>
-        <li><span onclick="showPage('services')">Services</span></li><li><span onclick="showPage('contact')">Contact</span></li>
-      </ul></nav>
-      <nav class="fc" aria-label="Services"><h4>Services</h4><ul>
-        <li><span onclick="showPage('services')">IT Recruitment</span></li><li><span onclick="showPage('services')">Non-IT Leadership Hiring</span></li>
-        <li><span onclick="showPage('services')">Executive Search</span></li><li><span onclick="showPage('services')">Retainer Model</span></li>
-      </ul></nav>
-      <address class="fc" style="font-style:normal"><h4>Contact</h4><ul>
+      <div class="fc"><h4>Navigate</h4><ul>
+        <li><span onclick="showPage('home')">Home</span></li>
+        <li><span onclick="showPage('about')">About Us</span></li>
+        <li><span onclick="showPage('services')">Services</span></li>
+        <li><span onclick="showPage('contact')">Contact</span></li>
+      </ul></div>
+      <div class="fc"><h4>Services</h4><ul>
+        <li><span onclick="showPage('services')">IT Recruitment</span></li>
+        <li><span onclick="showPage('services')">Non-IT Leadership Hiring</span></li>
+        <li><span onclick="showPage('services')">Executive Search</span></li>
+        <li><span onclick="showPage('services')">Retainer Model</span></li>
+      </ul></div>
+      <div class="fc"><h4>Contact</h4><ul>
         <li><a href="mailto:bhumika@scalexconsulting.in">bhumika@scalexconsulting.in</a></li>
         <li><a href="https://scalexconsulting.in">scalexconsulting.in</a></li>
-        <li><a href="https://linkedin.com/in/bhumikasrivastava" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-      </ul></address>
+        <li><a href="https://linkedin.com/in/bhumikasrivastava" target="_blank">LinkedIn</a></li>
+      </ul></div>
     </div>
     <div class="fbot">
       <p>© 2026 Scalex Consulting · Bengaluru, Karnataka, India · All rights reserved</p>
       <p><a href="#">Privacy Policy</a>&nbsp;·&nbsp;<a href="#">Terms of Service</a></p>
     </div>
   </footer>
-</article>
+</div>
 
 <!-- ══════════════════════════
      PAGE 4 — CONTACT
 ══════════════════════════ -->
-<article class="page" id="page-contact" aria-label="Contact page">
+<div class="page" id="page-contact">
 
-  <section class="contact-hero" aria-label="Contact hero">
+  <!-- Contact Hero -->
+  <div class="contact-hero">
     <span class="ey ey-lt" style="margin-bottom:14px;display:inline-block">Get In Touch</span>
     <h1>Let's Talk</h1>
     <p>A focused 20-minute conversation — you tell us what you need, we tell you exactly how we would approach it and whether we are the right fit. No obligation. Response within 24 hours.</p>
-  </section>
+  </div>
 
-  <section class="sec" aria-label="Contact details and form">
+  <!-- Contact main -->
+  <div class="sec">
     <div class="contact-grid">
       <div class="ci">
-        <h2>Reach Us Directly</h2>
-        <address style="font-style:normal">
-          <div class="citem"><div class="cico" aria-hidden="true">📧</div><div class="cit"><strong>Email</strong><a href="mailto:bhumika@scalexconsulting.in">bhumika@scalexconsulting.in</a></div></div>
-          <div class="citem"><div class="cico" aria-hidden="true">🌐</div><div class="cit"><strong>Website</strong><a href="https://scalexconsulting.in">scalexconsulting.in</a></div></div>
-          <div class="citem"><div class="cico" aria-hidden="true">💼</div><div class="cit"><strong>LinkedIn</strong><a href="https://linkedin.com/in/bhumikasrivastava" target="_blank" rel="noopener noreferrer">Bhumika Srivastava</a></div></div>
-          <div class="citem"><div class="cico" aria-hidden="true">📍</div><div class="cit"><strong>Based In</strong><span>Bengaluru, Karnataka, India</span></div></div>
-          <div class="citem"><div class="cico" aria-hidden="true">🌏</div><div class="cit"><strong>Serving</strong><span>India · Australia · Singapore · Middle East</span></div></div>
-          <div class="citem"><div class="cico" aria-hidden="true">⏱</div><div class="cit"><strong>Response Time</strong><span>Within 24 hours on business days</span></div></div>
-        </address>
+        <h3>Reach Us Directly</h3>
+        <div class="citem"><div class="cico">📧</div><div class="cit"><strong>Email</strong><a href="mailto:bhumika@scalexconsulting.in">bhumika@scalexconsulting.in</a></div></div>
+        <div class="citem"><div class="cico">🌐</div><div class="cit"><strong>Website</strong><a href="https://scalexconsulting.in">scalexconsulting.in</a></div></div>
+        <div class="citem"><div class="cico">💼</div><div class="cit"><strong>LinkedIn</strong><a href="https://linkedin.com/in/bhumikasrivastava" target="_blank">Bhumika Srivastava</a></div></div>
+        <div class="citem"><div class="cico">📍</div><div class="cit"><strong>Based In</strong><span>Bengaluru, Karnataka, India</span></div></div>
+        <div class="citem"><div class="cico">🌏</div><div class="cit"><strong>Serving</strong><span>India · Australia · Singapore · Middle East</span></div></div>
+        <div class="citem"><div class="cico">⏱</div><div class="cit"><strong>Response Time</strong><span>Within 24 hours on business days</span></div></div>
 
         <div style="margin-top:32px;background:var(--navy);border-radius:12px;padding:24px 28px">
-          <h3 style="font-family:var(--d);font-size:15px;font-weight:600;color:var(--white);margin-bottom:10px">What to expect on our first call</h3>
-          <ol style="display:flex;flex-direction:column;gap:10px;list-style:none">
-            <li style="display:flex;gap:10px;align-items:flex-start;font-size:13.5px;color:rgba(255,255,255,.65)"><span style="color:var(--gold);font-weight:700">1.</span>You share the role and what has been challenging about filling it</li>
-            <li style="display:flex;gap:10px;align-items:flex-start;font-size:13.5px;color:rgba(255,255,255,.65)"><span style="color:var(--gold);font-weight:700">2.</span>We tell you honestly whether we can help and how we would approach it</li>
-            <li style="display:flex;gap:10px;align-items:flex-start;font-size:13.5px;color:rgba(255,255,255,.65)"><span style="color:var(--gold);font-weight:700">3.</span>If there is a fit, we send a written search plan within 24 hours</li>
-            <li style="display:flex;gap:10px;align-items:flex-start;font-size:13.5px;color:rgba(255,255,255,.65)"><span style="color:var(--gold);font-weight:700">4.</span>Shortlist delivered in 7–10 days from mandate signing</li>
-          </ol>
+          <h4 style="font-family:var(--d);font-size:15px;font-weight:600;color:var(--white);margin-bottom:10px">What to expect on our first call</h4>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <div style="display:flex;gap:10px;align-items:flex-start;font-size:13.5px;color:rgba(255,255,255,.65)"><span style="color:var(--gold);font-weight:700">1.</span>You share the role and what has been challenging about filling it</div>
+            <div style="display:flex;gap:10px;align-items:flex-start;font-size:13.5px;color:rgba(255,255,255,.65)"><span style="color:var(--gold);font-weight:700">2.</span>We tell you honestly whether we can help and how we would approach it</div>
+            <div style="display:flex;gap:10px;align-items:flex-start;font-size:13.5px;color:rgba(255,255,255,.65)"><span style="color:var(--gold);font-weight:700">3.</span>If there is a fit, we send a written search plan within 24 hours</div>
+            <div style="display:flex;gap:10px;align-items:flex-start;font-size:13.5px;color:rgba(255,255,255,.65)"><span style="color:var(--gold);font-weight:700">4.</span>Shortlist delivered in 7–10 days from mandate signing</div>
+          </div>
         </div>
       </div>
 
       <div class="cf">
-        <h2>Send Us a Message</h2>
+        <h3>Send Us a Message</h3>
         <div class="fr2">
-          <div class="fg"><label for="c-name">Your Name *</label><input id="c-name" type="text" placeholder="Full name" autocomplete="name"></div>
-          <div class="fg"><label for="c-company">Company *</label><input id="c-company" type="text" placeholder="Company name" autocomplete="organization"></div>
+          <div class="fg"><label>Your Name *</label><input type="text" placeholder="Full name"></div>
+          <div class="fg"><label>Company *</label><input type="text" placeholder="Company name"></div>
         </div>
         <div class="fr2">
-          <div class="fg"><label for="c-email">Email Address *</label><input id="c-email" type="email" placeholder="Work email" autocomplete="email"></div>
-          <div class="fg"><label for="c-phone">Phone Number</label><input id="c-phone" type="tel" placeholder="+91 / +61 / +65 / +971" autocomplete="tel"></div>
+          <div class="fg"><label>Email Address *</label><input type="email" placeholder="Work email"></div>
+          <div class="fg"><label>Phone Number</label><input type="tel" placeholder="+91 / +61 / +65 / +971"></div>
         </div>
-        <div class="fg"><label for="c-country">Country *</label>
-          <select id="c-country" autocomplete="country">
+        <div class="fg"><label>Country *</label>
+          <select>
             <option value="">Select country</option>
             <option>India</option><option>Australia</option>
             <option>Singapore</option><option>UAE / Middle East</option><option>Other</option>
           </select>
         </div>
-        <div class="fg"><label for="c-enquiry">What are you looking for? *</label>
-          <select id="c-enquiry">
+        <div class="fg"><label>What are you looking for? *</label>
+          <select>
             <option value="">Select enquiry type</option>
             <option>IT Recruitment — Senior / Leadership Role</option>
             <option>Non-IT Leadership Hiring</option>
@@ -1057,57 +1124,78 @@ footer{background:var(--navy);padding:52px 6% 28px}
             <option>Not sure yet — let's talk</option>
           </select>
         </div>
-        <div class="fg"><label for="c-message">Tell us about the role(s) you need filled</label>
-          <textarea id="c-message" placeholder="Role title, seniority level, location, and any context about the search — the more you share, the faster we can come back with a plan..."></textarea>
+        <div class="fg"><label>Tell us about the role(s) you need filled</label>
+          <textarea placeholder="Role title, seniority level, location, and any context about the search — the more you share, the faster we can come back with a plan..."></textarea>
         </div>
         <button class="fsub">Send Message &nbsp;→</button>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section class="sec sec-alt" aria-label="Geographies we recruit in">
-    <header class="sh">
+  <!-- Offices / Markets -->
+  <div class="sec sec-alt">
+    <div class="sh">
       <span class="ey">Geographies</span>
       <h2 class="st">Where We Recruit</h2>
       <p class="ss">We place candidates across four geographies — with the same process, the same SLA, and the same accountability in every market.</p>
-    </header>
-    <div class="offices-grid">
-      <div class="off-card"><div class="off-flag" aria-hidden="true">🇮🇳</div><h3>India</h3><p>Bengaluru · Hyderabad · Pune · Chennai · Noida · Mumbai</p></div>
-      <div class="off-card"><div class="off-flag" aria-hidden="true">🇦🇺</div><h3>Australia</h3><p>Sydney · Melbourne · Brisbane · Perth</p></div>
-      <div class="off-card"><div class="off-flag" aria-hidden="true">🇸🇬</div><h3>Singapore</h3><p>CBD · One-North · Jurong East</p></div>
-      <div class="off-card"><div class="off-flag" aria-hidden="true">🇦🇪</div><h3>Middle East</h3><p>Dubai · Abu Dhabi · Riyadh · Doha</p></div>
     </div>
-  </section>
+    <div class="offices-grid">
+      <div class="off-card">
+        <div class="off-flag">🇮🇳</div>
+        <h4>India</h4>
+        <p>Bengaluru · Hyderabad · Pune · Chennai · Noida · Mumbai</p>
+      </div>
+      <div class="off-card">
+        <div class="off-flag">🇦🇺</div>
+        <h4>Australia</h4>
+        <p>Sydney · Melbourne · Brisbane · Perth</p>
+      </div>
+      <div class="off-card">
+        <div class="off-flag">🇸🇬</div>
+        <h4>Singapore</h4>
+        <p>CBD · One-North · Jurong East</p>
+      </div>
+      <div class="off-card">
+        <div class="off-flag">🇦🇪</div>
+        <h4>Middle East</h4>
+        <p>Dubai · Abu Dhabi · Riyadh · Doha</p>
+      </div>
+    </div>
+  </div>
 
   <footer>
     <div class="fg3">
       <div>
-        <p class="fb-name">Scale<span>X</span> Consulting</p>
-        <p class="fb-tl">IT Recruitment &amp; Leadership Hiring<br>Founded by Bhumika Srivastava · Bengaluru, India</p>
-        <div class="f-geos"><span class="fgt">🇮🇳 India</span><span class="fgt">🇦🇺 Australia</span><span class="fgt">🇸🇬 Singapore</span><span class="fgt">🇦🇪 Middle East</span></div>
+        <div class="fb-name">Scale<span>X</span> Consulting</div>
+        <div class="fb-tl">IT Recruitment & Leadership Hiring<br>Founded by Bhumika Srivastava · Bengaluru, India</div>
+        <div class="f-geos">
+          <span class="fgt">🇮🇳 India</span><span class="fgt">🇦🇺 Australia</span><span class="fgt">🇸🇬 Singapore</span><span class="fgt">🇦🇪 Middle East</span>
+        </div>
       </div>
-      <nav class="fc" aria-label="Footer navigation"><h4>Navigate</h4><ul>
-        <li><span onclick="showPage('home')">Home</span></li><li><span onclick="showPage('about')">About Us</span></li>
-        <li><span onclick="showPage('services')">Services</span></li><li><span onclick="showPage('contact')">Contact</span></li>
-      </ul></nav>
-      <nav class="fc" aria-label="Services"><h4>Services</h4><ul>
-        <li><span onclick="showPage('services')">IT Recruitment</span></li><li><span onclick="showPage('services')">Non-IT Leadership Hiring</span></li>
-        <li><span onclick="showPage('services')">Executive Search</span></li><li><span onclick="showPage('services')">Retainer Model</span></li>
-      </ul></nav>
-      <address class="fc" style="font-style:normal"><h4>Contact</h4><ul>
+      <div class="fc"><h4>Navigate</h4><ul>
+        <li><span onclick="showPage('home')">Home</span></li>
+        <li><span onclick="showPage('about')">About Us</span></li>
+        <li><span onclick="showPage('services')">Services</span></li>
+        <li><span onclick="showPage('contact')">Contact</span></li>
+      </ul></div>
+      <div class="fc"><h4>Services</h4><ul>
+        <li><span onclick="showPage('services')">IT Recruitment</span></li>
+        <li><span onclick="showPage('services')">Non-IT Leadership Hiring</span></li>
+        <li><span onclick="showPage('services')">Executive Search</span></li>
+        <li><span onclick="showPage('services')">Retainer Model</span></li>
+      </ul></div>
+      <div class="fc"><h4>Contact</h4><ul>
         <li><a href="mailto:bhumika@scalexconsulting.in">bhumika@scalexconsulting.in</a></li>
         <li><a href="https://scalexconsulting.in">scalexconsulting.in</a></li>
-        <li><a href="https://linkedin.com/in/bhumikasrivastava" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-      </ul></address>
+        <li><a href="https://linkedin.com/in/bhumikasrivastava" target="_blank">LinkedIn</a></li>
+      </ul></div>
     </div>
     <div class="fbot">
       <p>© 2026 Scalex Consulting · Bengaluru, Karnataka, India · All rights reserved</p>
       <p><a href="#">Privacy Policy</a>&nbsp;·&nbsp;<a href="#">Terms of Service</a></p>
     </div>
   </footer>
-</article>
-
-</main><!-- end #main-content -->
+</div>
 
 <script>
 // ── Page navigation ──
@@ -1124,10 +1212,16 @@ function showPage(id) {
   return false;
 }
 
+// Prevent default on desktop nav links
+document.querySelectorAll('.nav-tabs a').forEach(a => {
+  a.addEventListener('click', e => e.preventDefault());
+});
+
 // ── Hamburger ──
 function closeMobileNav() {
-  document.getElementById('mobile-nav').classList.remove('open');
+  var nav = document.getElementById('mobile-nav');
   var btn = document.getElementById('hamburger');
+  nav.classList.remove('open');
   btn.classList.remove('open');
   btn.setAttribute('aria-expanded', 'false');
 }
@@ -1157,29 +1251,24 @@ function closePopup() {
 function submitPopup() {
   var name = document.getElementById('p-name').value.trim();
   var email = document.getElementById('p-email').value.trim();
-  if (!name || !email) {
-    alert('Please fill in your name and email.');
-    return;
-  }
+  if (!name || !email) { alert('Please fill in your name and email.'); return; }
   document.getElementById('popup-form-state').style.display = 'none';
   document.getElementById('popup-success').style.display = 'block';
 }
 
-// Close popup on overlay click
 document.getElementById('popup-overlay').addEventListener('click', function(e) {
   if (e.target === this) closePopup();
 });
 
-// Close popup on Escape key
 document.addEventListener('keydown', function(e) {
   if (e.key === 'Escape') closePopup();
 });
-
-// Prevent default on desktop nav links
-document.querySelectorAll('.nav-tabs a').forEach(a => {
-  a.addEventListener('click', e => e.preventDefault());
-});
 </script>
+
+<!-- Floating enquiry button -->
+<button class="float-cta" onclick="openPopup()" aria-label="Quick Enquiry">
+  <span class="fc-icon">💬</span> Quick Enquiry
+</button>
 
 </body>
 </html>
